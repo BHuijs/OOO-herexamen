@@ -1,0 +1,1806 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_XXpJgH3ZEee7H_Ximq65pQ" name="OOO_Yahtzee">
+    <eAnnotations xmi:id="_XdWv8H3ZEee7H_Ximq65pQ" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_XdWv8X3ZEee7H_Ximq65pQ" source="codegen">
+        <details xmi:id="_XdWv8n3ZEee7H_Ximq65pQ" key="codegenDirectory" value="/OOO_Yahtzee/src"/>
+        <details xmi:id="_YUz8YH3ZEee7H_Ximq65pQ" key="AssociatedSourceCode" value="/OOO_Yahtzee/src/controller/Controller.java;3996416021/1;/OOO_Yahtzee/src/controller/ControllerCommon.java;2708318517/1;/OOO_Yahtzee/src/controller/ControllerException.java;415194749/1;/OOO_Yahtzee/src/controller/GameController.java;3757921669/1;/OOO_Yahtzee/src/controller/PlayerController.java;521931532/1;/OOO_Yahtzee/src/launcher.java;1519998579/1;/OOO_Yahtzee/src/model/game/Dice.java;4265874975/1;/OOO_Yahtzee/src/model/game/EndState.java;1670444598/1;/OOO_Yahtzee/src/model/game/GameState.java;540117392/1;/OOO_Yahtzee/src/model/game/NewGameState.java;2862492017/1;/OOO_Yahtzee/src/model/game/TurnState.java;3861322109/1;/OOO_Yahtzee/src/model/main/Facade.java;355775619/1;/OOO_Yahtzee/src/model/player/Player.java;3226829410/1;/OOO_Yahtzee/src/view/DicePanel.java;2201510567/1;/OOO_Yahtzee/src/view/GameBoard.java;1014607121/1;/OOO_Yahtzee/src/view/UI.java;193374848/1;/OOO_Yahtzee/src/view/View.java;929093079/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_XtO_AH3ZEee7H_Ximq65pQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_XtPmEH3ZEee7H_Ximq65pQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_XtPmEX3ZEee7H_Ximq65pQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_XtPmEn3ZEee7H_Ximq65pQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_XtPmE33ZEee7H_Ximq65pQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_XtPmFH3ZEee7H_Ximq65pQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_XtPmFX3ZEee7H_Ximq65pQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_XtQNIH3ZEee7H_Ximq65pQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_XtQNIX3ZEee7H_Ximq65pQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_XtT3gH3ZEee7H_Ximq65pQ" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_XtT3gX3ZEee7H_Ximq65pQ" name="util">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_XzYqUH3ZEee7H_Ximq65pQ" name="Map"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_XzibUH3ZEee7H_Ximq65pQ" name="HashMap"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_Xz2kYH3ZEee7H_Ximq65pQ" name="Set"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_XttgIH3ZEee7H_Ximq65pQ" name="awt">
+        <packagedElement xmi:type="uml:Package" xmi:id="_XttgIX3ZEee7H_Ximq65pQ" name="event">
+          <packagedElement xmi:type="uml:Class" xmi:id="_XzleoH3ZEee7H_Ximq65pQ" name="MouseAdapter"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_XzmFsX3ZEee7H_Ximq65pQ" name="MouseEvent"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_Xz8D8H3ZEee7H_Ximq65pQ" name="ActionListener"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_Xz8D8n3ZEee7H_Ximq65pQ" name="MouseListener"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_X0DYsH3ZEee7H_Ximq65pQ" name="KeyListener"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_Xz6OwH3ZEee7H_Ximq65pQ" name="Color"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_Xz610X3ZEee7H_Ximq65pQ" name="Dimension"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_X0SCMH3ZEee7H_Ximq65pQ" name="lang">
+        <packagedElement xmi:type="uml:Class" xmi:id="_X0SCMX3ZEee7H_Ximq65pQ" name="Exception"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_XtUekH3ZEee7H_Ximq65pQ" name="model">
+      <packagedElement xmi:type="uml:Package" xmi:id="_XtUekX3ZEee7H_Ximq65pQ" name="game">
+        <packagedElement xmi:type="uml:Class" xmi:id="_XvqA4X3ZEee7H_Ximq65pQ" name="Dice">
+          <ownedAttribute xmi:id="_X0wjUH3ZEee7H_Ximq65pQ" name="dice" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <qualifier xmi:id="_X0wjUX3ZEee7H_Ximq65pQ">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </qualifier>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_X0xKYH3ZEee7H_Ximq65pQ" name="lockedDice" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <qualifier xmi:id="_X0xKYX3ZEee7H_Ximq65pQ">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </qualifier>
+          </ownedAttribute>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1N2U33ZEee7H_Ximq65pQ" name="Dice" specification="_Xvqn8H3ZEee7H_Ximq65pQ">
+            <ownedParameter xmi:id="_X1N2VH3ZEee7H_Ximq65pQ" type="_XvqA4X3ZEee7H_Ximq65pQ" direction="return"/>
+            <language>java</language>
+            <body>this.dice = new HashMap&lt;>();&#xD;
+		this.lockedDice = new HashMap&lt;>();&#xD;
+		for(int i = 0; i &lt; 5; i++)&#xD;
+		{&#xD;
+			dice.put(i, 0);&#xD;
+			lockedDice.put(i, 0);&#xD;
+		}&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1OdYH3ZEee7H_Ximq65pQ" name="lockDie" specification="_XvrPA33ZEee7H_Ximq65pQ">
+            <ownedParameter xmi:id="_X1OdYX3ZEee7H_Ximq65pQ" name="index">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>lockedDice.put(index, dice.get(index));&#xD;
+		dice.put(index, -1);&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1OdYn3ZEee7H_Ximq65pQ" name="rollDice" specification="_Xvr2EH3ZEee7H_Ximq65pQ">
+            <language>java</language>
+            <body>for(int i = 0; i &lt; dice.size(); i++)&#xD;
+		{&#xD;
+			if(dice.get(i) != -1)&#xD;
+			{&#xD;
+				dice.put(i, (int) (Math.random() * 6) + 1);&#xD;
+			}&#xD;
+		}&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1OdY33ZEee7H_Ximq65pQ" name="returnLockedDie" specification="_Xvr2EX3ZEee7H_Ximq65pQ">
+            <ownedParameter xmi:id="_X1OdZH3ZEee7H_Ximq65pQ" name="indexKey">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>dice.put(indexKey, lockedDice.get(indexKey));&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_Xvqn8H3ZEee7H_Ximq65pQ" name="Dice" method="_X1N2U33ZEee7H_Ximq65pQ">
+            <eAnnotations xmi:id="_XvrPAH3ZEee7H_Ximq65pQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_XvrPAX3ZEee7H_Ximq65pQ" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_XvrPAn3ZEee7H_Ximq65pQ" type="_XvqA4X3ZEee7H_Ximq65pQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_XvrPA33ZEee7H_Ximq65pQ" name="lockDie" method="_X1OdYH3ZEee7H_Ximq65pQ">
+            <ownedParameter xmi:id="_XvrPBH3ZEee7H_Ximq65pQ" name="index">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Xvr2EH3ZEee7H_Ximq65pQ" name="rollDice" method="_X1OdYn3ZEee7H_Ximq65pQ"/>
+          <ownedOperation xmi:id="_Xvr2EX3ZEee7H_Ximq65pQ" name="returnLockedDie" method="_X1OdY33ZEee7H_Ximq65pQ">
+            <ownedParameter xmi:id="_Xvr2En3ZEee7H_Ximq65pQ" name="indexKey">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_XvtEMH3ZEee7H_Ximq65pQ" name="EndState">
+          <interfaceRealization xmi:id="_XzpwEH3ZEee7H_Ximq65pQ" client="_XvtEMH3ZEee7H_Ximq65pQ" supplier="_XvzK0H3ZEee7H_Ximq65pQ" contract="_XvzK0H3ZEee7H_Ximq65pQ"/>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1PEcH3ZEee7H_Ximq65pQ" name="getCurrentPlayer" specification="_Xvu5YH3ZEee7H_Ximq65pQ">
+            <ownedParameter xmi:id="_X1PEcX3ZEee7H_Ximq65pQ" type="_XwCbYH3ZEee7H_Ximq65pQ" direction="return"/>
+            <language>java</language>
+            <body>return null;&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_XvtrQH3ZEee7H_Ximq65pQ" name="EndState">
+            <eAnnotations xmi:id="_XvuSUH3ZEee7H_Ximq65pQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_XvuSUX3ZEee7H_Ximq65pQ" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_XvuSU33ZEee7H_Ximq65pQ" type="_XvtEMH3ZEee7H_Ximq65pQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Xvu5YH3ZEee7H_Ximq65pQ" name="getCurrentPlayer" method="_X1PEcH3ZEee7H_Ximq65pQ">
+            <ownedParameter xmi:id="_XzszY33ZEee7H_Ximq65pQ" type="_XwCbYH3ZEee7H_Ximq65pQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_XzqXIH3ZEee7H_Ximq65pQ" name="startGame">
+            <ownedParameter xmi:id="_XzqXIX3ZEee7H_Ximq65pQ" name="context" type="_Xu5y8H3ZEee7H_Ximq65pQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Xzq-Mn3ZEee7H_Ximq65pQ" name="turn">
+            <ownedParameter xmi:id="_Xzq-M33ZEee7H_Ximq65pQ" name="context" type="_Xu5y8H3ZEee7H_Ximq65pQ"/>
+            <ownedParameter xmi:id="_Xzq-NH3ZEee7H_Ximq65pQ" name="player" type="_XwCbYH3ZEee7H_Ximq65pQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_XzsMUn3ZEee7H_Ximq65pQ" name="endGame">
+            <ownedParameter xmi:id="_XzsMU33ZEee7H_Ximq65pQ" name="context" type="_Xu5y8H3ZEee7H_Ximq65pQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_X0VskH3ZEee7H_Ximq65pQ" name="newGame">
+            <ownedParameter xmi:id="_X0VskX3ZEee7H_Ximq65pQ" name="players" type="_XzYqUH3ZEee7H_Ximq65pQ"/>
+            <ownedParameter xmi:id="_X0Vskn3ZEee7H_Ximq65pQ" name="context" type="_Xu5y8H3ZEee7H_Ximq65pQ"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_XvzK0H3ZEee7H_Ximq65pQ" name="GameState">
+          <ownedAttribute xmi:id="_Xv0Y8H3ZEee7H_Ximq65pQ" name="currentPlayer" type="_XwCbYH3ZEee7H_Ximq65pQ" isReadOnly="true" association="_X1kboX3ZEee7H_Ximq65pQ"/>
+          <ownedOperation xmi:id="_XzuBgH3ZEee7H_Ximq65pQ" name="startGame">
+            <ownedParameter xmi:id="_XzuBgX3ZEee7H_Ximq65pQ" name="context" type="_Xu5y8H3ZEee7H_Ximq65pQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_XzuBgn3ZEee7H_Ximq65pQ" name="turn">
+            <ownedParameter xmi:id="_XzuBg33ZEee7H_Ximq65pQ" name="context" type="_Xu5y8H3ZEee7H_Ximq65pQ"/>
+            <ownedParameter xmi:id="_XzuokH3ZEee7H_Ximq65pQ" name="player" type="_XwCbYH3ZEee7H_Ximq65pQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_XzuokX3ZEee7H_Ximq65pQ" name="endGame">
+            <ownedParameter xmi:id="_Xzuokn3ZEee7H_Ximq65pQ" name="context" type="_Xu5y8H3ZEee7H_Ximq65pQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_X0W6sH3ZEee7H_Ximq65pQ" name="newGame">
+            <ownedParameter xmi:id="_X0W6sX3ZEee7H_Ximq65pQ" name="players" type="_XzYqUH3ZEee7H_Ximq65pQ"/>
+            <ownedParameter xmi:id="_X0W6sn3ZEee7H_Ximq65pQ" name="context" type="_Xu5y8H3ZEee7H_Ximq65pQ"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_Xv1nEH3ZEee7H_Ximq65pQ" name="NewGameState">
+          <ownedAttribute xmi:id="_X0xKYn3ZEee7H_Ximq65pQ" name="model" visibility="private" type="_Xv9i4H3ZEee7H_Ximq65pQ" association="_X1ne8X3ZEee7H_Ximq65pQ"/>
+          <interfaceRealization xmi:id="_XzvPoH3ZEee7H_Ximq65pQ" client="_Xv1nEH3ZEee7H_Ximq65pQ" supplier="_XvzK0H3ZEee7H_Ximq65pQ" contract="_XvzK0H3ZEee7H_Ximq65pQ"/>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1PrgH3ZEee7H_Ximq65pQ" name="NewGameState" specification="_XzvPoX3ZEee7H_Ximq65pQ">
+            <ownedParameter xmi:id="_X1PrgX3ZEee7H_Ximq65pQ" name="model" type="_Xv9i4H3ZEee7H_Ximq65pQ"/>
+            <ownedParameter xmi:id="_X1Prgn3ZEee7H_Ximq65pQ" type="_Xv1nEH3ZEee7H_Ximq65pQ" direction="return"/>
+            <language>java</language>
+            <body>this.model = model;&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1Prg33ZEee7H_Ximq65pQ" name="newGame" specification="_X0YI0H3ZEee7H_Ximq65pQ">
+            <ownedParameter xmi:id="_X1PrhH3ZEee7H_Ximq65pQ" name="players" type="_XzYqUH3ZEee7H_Ximq65pQ"/>
+            <ownedParameter xmi:id="_X1PrhX3ZEee7H_Ximq65pQ" name="context" type="_Xu5y8H3ZEee7H_Ximq65pQ"/>
+            <language>java</language>
+            <body>startGame(context);&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1Prhn3ZEee7H_Ximq65pQ" name="startGame" specification="_XzwdwH3ZEee7H_Ximq65pQ">
+            <ownedParameter xmi:id="_X1Prh33ZEee7H_Ximq65pQ" name="context" type="_Xu5y8H3ZEee7H_Ximq65pQ"/>
+            <language>java</language>
+            <body>context.setState(new TurnState(model, model.getPlayer(&quot;player1&quot;)));&#xD;
+		model.startGame(context.getCurrentState());&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1QSkH3ZEee7H_Ximq65pQ" name="getCurrentPlayer" specification="_Xv21MH3ZEee7H_Ximq65pQ">
+            <ownedParameter xmi:id="_X1QSkX3ZEee7H_Ximq65pQ" type="_XwCbYH3ZEee7H_Ximq65pQ" direction="return"/>
+            <language>java</language>
+            <body>return null;&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_Xv21MH3ZEee7H_Ximq65pQ" name="getCurrentPlayer" method="_X1QSkH3ZEee7H_Ximq65pQ">
+            <ownedParameter xmi:id="_XzyS8n3ZEee7H_Ximq65pQ" type="_XwCbYH3ZEee7H_Ximq65pQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_XzvPoX3ZEee7H_Ximq65pQ" name="NewGameState" method="_X1PrgH3ZEee7H_Ximq65pQ">
+            <eAnnotations xmi:id="_Xzv2sX3ZEee7H_Ximq65pQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_Xzv2sn3ZEee7H_Ximq65pQ" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_Xzv2sH3ZEee7H_Ximq65pQ" name="model" type="_Xv9i4H3ZEee7H_Ximq65pQ"/>
+            <ownedParameter xmi:id="_Xzv2s33ZEee7H_Ximq65pQ" type="_Xv1nEH3ZEee7H_Ximq65pQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_XzwdwH3ZEee7H_Ximq65pQ" name="startGame" method="_X1Prhn3ZEee7H_Ximq65pQ">
+            <ownedParameter xmi:id="_XzwdwX3ZEee7H_Ximq65pQ" name="context" type="_Xu5y8H3ZEee7H_Ximq65pQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_XzxE0n3ZEee7H_Ximq65pQ" name="turn">
+            <ownedParameter xmi:id="_XzxE033ZEee7H_Ximq65pQ" name="context" type="_Xu5y8H3ZEee7H_Ximq65pQ"/>
+            <ownedParameter xmi:id="_XzxE1H3ZEee7H_Ximq65pQ" name="player" type="_XwCbYH3ZEee7H_Ximq65pQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Xzxr4n3ZEee7H_Ximq65pQ" name="endGame">
+            <ownedParameter xmi:id="_Xzxr433ZEee7H_Ximq65pQ" name="context" type="_Xu5y8H3ZEee7H_Ximq65pQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_X0YI0H3ZEee7H_Ximq65pQ" name="newGame" method="_X1Prg33ZEee7H_Ximq65pQ">
+            <ownedParameter xmi:id="_X0YI0X3ZEee7H_Ximq65pQ" name="players" type="_XzYqUH3ZEee7H_Ximq65pQ"/>
+            <ownedParameter xmi:id="_X0YI0n3ZEee7H_Ximq65pQ" name="context" type="_Xu5y8H3ZEee7H_Ximq65pQ"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_Xv54gH3ZEee7H_Ximq65pQ" name="TurnState">
+          <ownedAttribute xmi:id="_X0xxcX3ZEee7H_Ximq65pQ" name="model" visibility="private" type="_Xv9i4H3ZEee7H_Ximq65pQ" association="_X1oGAX3ZEee7H_Ximq65pQ"/>
+          <ownedAttribute xmi:id="_X0yYgX3ZEee7H_Ximq65pQ" name="playing" visibility="private" type="_XwCbYH3ZEee7H_Ximq65pQ" association="_X1otEH3ZEee7H_Ximq65pQ"/>
+          <interfaceRealization xmi:id="_Xzy6AH3ZEee7H_Ximq65pQ" client="_Xv54gH3ZEee7H_Ximq65pQ" supplier="_XvzK0H3ZEee7H_Ximq65pQ" contract="_XvzK0H3ZEee7H_Ximq65pQ"/>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1QSkn3ZEee7H_Ximq65pQ" name="TurnState" specification="_Xzy6AX3ZEee7H_Ximq65pQ">
+            <ownedParameter xmi:id="_X1QSk33ZEee7H_Ximq65pQ" name="model" type="_Xv9i4H3ZEee7H_Ximq65pQ"/>
+            <ownedParameter xmi:id="_X1QSlH3ZEee7H_Ximq65pQ" name="player" type="_XwCbYH3ZEee7H_Ximq65pQ"/>
+            <ownedParameter xmi:id="_X1QSlX3ZEee7H_Ximq65pQ" type="_Xv54gH3ZEee7H_Ximq65pQ" direction="return"/>
+            <language>java</language>
+            <body>this.playing = player;&#xD;
+		this.model = model;&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1Q5oH3ZEee7H_Ximq65pQ" name="turn" specification="_Xz0vMn3ZEee7H_Ximq65pQ">
+            <ownedParameter xmi:id="_X1Q5oX3ZEee7H_Ximq65pQ" name="context" type="_Xu5y8H3ZEee7H_Ximq65pQ"/>
+            <ownedParameter xmi:id="_X1Q5on3ZEee7H_Ximq65pQ" name="player" type="_XwCbYH3ZEee7H_Ximq65pQ"/>
+            <language>java</language>
+            <body>System.out.println(playing.getName() + &quot;, &quot; + player.getName());&#xD;
+		player.setRolls();&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1Q5o33ZEee7H_Ximq65pQ" name="getCurrentPlayer" specification="_Xv7GoH3ZEee7H_Ximq65pQ">
+            <ownedParameter xmi:id="_X1Q5pH3ZEee7H_Ximq65pQ" type="_XwCbYH3ZEee7H_Ximq65pQ" direction="return"/>
+            <language>java</language>
+            <body>return this.playing;&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_Xv7GoH3ZEee7H_Ximq65pQ" name="getCurrentPlayer" method="_X1Q5o33ZEee7H_Ximq65pQ">
+            <ownedParameter xmi:id="_Xz19U33ZEee7H_Ximq65pQ" type="_XwCbYH3ZEee7H_Ximq65pQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Xzy6AX3ZEee7H_Ximq65pQ" name="TurnState" method="_X1QSkn3ZEee7H_Ximq65pQ">
+            <eAnnotations xmi:id="_XzzhEX3ZEee7H_Ximq65pQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_XzzhEn3ZEee7H_Ximq65pQ" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_Xzy6An3ZEee7H_Ximq65pQ" name="model" type="_Xv9i4H3ZEee7H_Ximq65pQ"/>
+            <ownedParameter xmi:id="_XzzhEH3ZEee7H_Ximq65pQ" name="player" type="_XwCbYH3ZEee7H_Ximq65pQ"/>
+            <ownedParameter xmi:id="_XzzhE33ZEee7H_Ximq65pQ" type="_Xv54gH3ZEee7H_Ximq65pQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Xz0IIH3ZEee7H_Ximq65pQ" name="startGame">
+            <ownedParameter xmi:id="_Xz0IIX3ZEee7H_Ximq65pQ" name="context" type="_Xu5y8H3ZEee7H_Ximq65pQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Xz0vMn3ZEee7H_Ximq65pQ" name="turn" method="_X1Q5oH3ZEee7H_Ximq65pQ">
+            <ownedParameter xmi:id="_Xz0vM33ZEee7H_Ximq65pQ" name="context" type="_Xu5y8H3ZEee7H_Ximq65pQ"/>
+            <ownedParameter xmi:id="_Xz0vNH3ZEee7H_Ximq65pQ" name="player" type="_XwCbYH3ZEee7H_Ximq65pQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Xz1WQ33ZEee7H_Ximq65pQ" name="endGame">
+            <ownedParameter xmi:id="_Xz1WRH3ZEee7H_Ximq65pQ" name="context" type="_Xu5y8H3ZEee7H_Ximq65pQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_X0alEH3ZEee7H_Ximq65pQ" name="newGame">
+            <ownedParameter xmi:id="_X0alEX3ZEee7H_Ximq65pQ" name="players" type="_XzYqUH3ZEee7H_Ximq65pQ"/>
+            <ownedParameter xmi:id="_X0alEn3ZEee7H_Ximq65pQ" name="context" type="_Xu5y8H3ZEee7H_Ximq65pQ"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_X1kboX3ZEee7H_Ximq65pQ" name="" memberEnd="_X1kbon3ZEee7H_Ximq65pQ _Xv0Y8H3ZEee7H_Ximq65pQ">
+          <ownedEnd xmi:id="_X1kbon3ZEee7H_Ximq65pQ" name="" type="_XvzK0H3ZEee7H_Ximq65pQ" association="_X1kboX3ZEee7H_Ximq65pQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_X1ne8X3ZEee7H_Ximq65pQ" name="" memberEnd="_X1ne8n3ZEee7H_Ximq65pQ _X0xKYn3ZEee7H_Ximq65pQ">
+          <ownedEnd xmi:id="_X1ne8n3ZEee7H_Ximq65pQ" name="" type="_Xv1nEH3ZEee7H_Ximq65pQ" association="_X1ne8X3ZEee7H_Ximq65pQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_X1oGAX3ZEee7H_Ximq65pQ" name="" memberEnd="_X1oGAn3ZEee7H_Ximq65pQ _X0xxcX3ZEee7H_Ximq65pQ">
+          <ownedEnd xmi:id="_X1oGAn3ZEee7H_Ximq65pQ" name="" type="_Xv54gH3ZEee7H_Ximq65pQ" association="_X1oGAX3ZEee7H_Ximq65pQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_X1otEH3ZEee7H_Ximq65pQ" name="" memberEnd="_X1otEX3ZEee7H_Ximq65pQ _X0yYgX3ZEee7H_Ximq65pQ">
+          <ownedEnd xmi:id="_X1otEX3ZEee7H_Ximq65pQ" name="" type="_Xv54gH3ZEee7H_Ximq65pQ" association="_X1otEH3ZEee7H_Ximq65pQ"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_XtalMH3ZEee7H_Ximq65pQ" name="main">
+        <packagedElement xmi:type="uml:Class" xmi:id="_Xv9i4H3ZEee7H_Ximq65pQ" name="Facade">
+          <ownedAttribute xmi:id="_X00NsH3ZEee7H_Ximq65pQ" name="controller" visibility="private" type="_XvTbkH3ZEee7H_Ximq65pQ" association="_X1otE33ZEee7H_Ximq65pQ"/>
+          <ownedAttribute xmi:id="_X000wH3ZEee7H_Ximq65pQ" name="players" visibility="private" type="_XwCbYH3ZEee7H_Ximq65pQ" association="_X1pUIX3ZEee7H_Ximq65pQ">
+            <qualifier xmi:id="_X000wn3ZEee7H_Ximq65pQ">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </qualifier>
+          </ownedAttribute>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1RgsH3ZEee7H_Ximq65pQ" name="Facade" specification="_Xz3ygH3ZEee7H_Ximq65pQ">
+            <ownedParameter xmi:id="_X1RgsX3ZEee7H_Ximq65pQ" name="controller" type="_XvTbkH3ZEee7H_Ximq65pQ"/>
+            <ownedParameter xmi:id="_X1Rgsn3ZEee7H_Ximq65pQ" type="_Xv9i4H3ZEee7H_Ximq65pQ" direction="return"/>
+            <language>java</language>
+            <body>this.controller = controller;
+		players = new HashMap&lt;String, Player>();
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1Rgs33ZEee7H_Ximq65pQ" name="newGame" specification="_X0dBUH3ZEee7H_Ximq65pQ">
+            <ownedParameter xmi:id="_X1RgtH3ZEee7H_Ximq65pQ" name="playerlist" type="_XzYqUH3ZEee7H_Ximq65pQ"/>
+            <language>java</language>
+            <body>Player player;
+		for(int i = 1; i &lt; playerlist.size()+1; i++)
+		{
+			player = new Player(&quot;player&quot;+i, playerlist.get(&quot;player&quot;+i));
+			this.players.put(&quot;player&quot;+i, player);
+		}
+		
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1RgtX3ZEee7H_Ximq65pQ" name="startGame" specification="_Xz4ZkH3ZEee7H_Ximq65pQ">
+            <ownedParameter xmi:id="_X1Rgtn3ZEee7H_Ximq65pQ" name="currentState" type="_XvzK0H3ZEee7H_Ximq65pQ"/>
+            <language>java</language>
+            <body>controller.turns(currentState);
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1Rgt33ZEee7H_Ximq65pQ" name="getPlayer" specification="_Xv-J8H3ZEee7H_Ximq65pQ">
+            <ownedParameter xmi:id="_X1RguH3ZEee7H_Ximq65pQ" name="id">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_X1RguX3ZEee7H_Ximq65pQ" type="_XwCbYH3ZEee7H_Ximq65pQ" direction="return"/>
+            <language>java</language>
+            <body>return players.get(id);
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1SHwH3ZEee7H_Ximq65pQ" name="getPlayerDice" specification="_Xv-xAH3ZEee7H_Ximq65pQ">
+            <ownedParameter xmi:id="_X1SHwX3ZEee7H_Ximq65pQ" name="id">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_X1SHwn3ZEee7H_Ximq65pQ" type="_XzYqUH3ZEee7H_Ximq65pQ" direction="return"/>
+            <language>java</language>
+            <body>return players.get(id).getDice();
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1SHw33ZEee7H_Ximq65pQ" name="getPlayerByName" specification="_Xv__IH3ZEee7H_Ximq65pQ">
+            <ownedParameter xmi:id="_X1SHxH3ZEee7H_Ximq65pQ" name="name">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_X1SHxX3ZEee7H_Ximq65pQ" type="_XwCbYH3ZEee7H_Ximq65pQ" direction="return"/>
+            <language>java</language>
+            <body>Player player = null;
+		Set&lt;String> keys = players.keySet();
+		for (String key : keys) {
+			if(players.get(key).getName().equals(name))
+			{
+				player = players.get(key);
+			}
+		}
+		return player;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1Su0H3ZEee7H_Ximq65pQ" name="rollDice" specification="_Xv__In3ZEee7H_Ximq65pQ">
+            <ownedParameter xmi:id="_X1Su0X3ZEee7H_Ximq65pQ" name="id">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>getPlayer(id).rollDice();
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1Su0n3ZEee7H_Ximq65pQ" name="lockDie" specification="_XwAmMH3ZEee7H_Ximq65pQ">
+            <ownedParameter xmi:id="_X1Su033ZEee7H_Ximq65pQ" name="id">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_X1Su1H3ZEee7H_Ximq65pQ" name="dieIndex">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>getPlayer(id).lockDie(dieIndex);
+	</body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_Xv-J8H3ZEee7H_Ximq65pQ" name="getPlayer" method="_X1Rgt33ZEee7H_Ximq65pQ">
+            <ownedParameter xmi:id="_Xv-J8X3ZEee7H_Ximq65pQ" name="id">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_Xz4Zkn3ZEee7H_Ximq65pQ" type="_XwCbYH3ZEee7H_Ximq65pQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Xv-xAH3ZEee7H_Ximq65pQ" name="getPlayerDice" method="_X1SHwH3ZEee7H_Ximq65pQ">
+            <ownedParameter xmi:id="_Xv-xAX3ZEee7H_Ximq65pQ" name="id">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_X0doYX3ZEee7H_Ximq65pQ" type="_XzYqUH3ZEee7H_Ximq65pQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Xv__IH3ZEee7H_Ximq65pQ" name="getPlayerByName" method="_X1SHw33ZEee7H_Ximq65pQ">
+            <ownedParameter xmi:id="_Xv__IX3ZEee7H_Ximq65pQ" name="name">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_Xz4Zk33ZEee7H_Ximq65pQ" type="_XwCbYH3ZEee7H_Ximq65pQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Xv__In3ZEee7H_Ximq65pQ" name="rollDice" method="_X1Su0H3ZEee7H_Ximq65pQ">
+            <ownedParameter xmi:id="_Xv__I33ZEee7H_Ximq65pQ" name="id">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_XwAmMH3ZEee7H_Ximq65pQ" name="lockDie" method="_X1Su0n3ZEee7H_Ximq65pQ">
+            <ownedParameter xmi:id="_XwAmMX3ZEee7H_Ximq65pQ" name="id">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_XwAmMn3ZEee7H_Ximq65pQ" name="dieIndex">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Xz3ygH3ZEee7H_Ximq65pQ" name="Facade" method="_X1RgsH3ZEee7H_Ximq65pQ">
+            <eAnnotations xmi:id="_Xz3ygn3ZEee7H_Ximq65pQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_Xz3yg33ZEee7H_Ximq65pQ" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_Xz3ygX3ZEee7H_Ximq65pQ" name="controller" type="_XvTbkH3ZEee7H_Ximq65pQ"/>
+            <ownedParameter xmi:id="_Xz3yhH3ZEee7H_Ximq65pQ" type="_Xv9i4H3ZEee7H_Ximq65pQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Xz4ZkH3ZEee7H_Ximq65pQ" name="startGame" method="_X1RgtX3ZEee7H_Ximq65pQ">
+            <ownedParameter xmi:id="_Xz4ZkX3ZEee7H_Ximq65pQ" name="currentState" type="_XvzK0H3ZEee7H_Ximq65pQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_X0dBUH3ZEee7H_Ximq65pQ" name="newGame" method="_X1Rgs33ZEee7H_Ximq65pQ">
+            <ownedParameter xmi:id="_X0dBUX3ZEee7H_Ximq65pQ" name="playerlist" type="_XzYqUH3ZEee7H_Ximq65pQ"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_X1otE33ZEee7H_Ximq65pQ" name="" memberEnd="_X1otFH3ZEee7H_Ximq65pQ _X00NsH3ZEee7H_Ximq65pQ">
+          <ownedEnd xmi:id="_X1otFH3ZEee7H_Ximq65pQ" name="" type="_Xv9i4H3ZEee7H_Ximq65pQ" association="_X1otE33ZEee7H_Ximq65pQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_X1pUIX3ZEee7H_Ximq65pQ" name="" memberEnd="_X1pUIn3ZEee7H_Ximq65pQ _X000wH3ZEee7H_Ximq65pQ">
+          <ownedEnd xmi:id="_X1pUIn3ZEee7H_Ximq65pQ" name="" type="_Xv9i4H3ZEee7H_Ximq65pQ" association="_X1pUIX3ZEee7H_Ximq65pQ"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_XtalMX3ZEee7H_Ximq65pQ" name="player">
+        <packagedElement xmi:type="uml:Class" xmi:id="_XwCbYH3ZEee7H_Ximq65pQ" name="Player">
+          <ownedAttribute xmi:id="_X01b0H3ZEee7H_Ximq65pQ" name="id" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_X01b0n3ZEee7H_Ximq65pQ" name="name" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_X02C4H3ZEee7H_Ximq65pQ" name="dice" type="_XvqA4X3ZEee7H_Ximq65pQ" isReadOnly="true" association="_X1p7MX3ZEee7H_Ximq65pQ"/>
+          <ownedAttribute xmi:id="_X03RAH3ZEee7H_Ximq65pQ" name="score" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_X03RAX3ZEee7H_Ximq65pQ" name="rolls" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1TV4n3ZEee7H_Ximq65pQ" name="Player" specification="_XwDpgH3ZEee7H_Ximq65pQ">
+            <ownedParameter xmi:id="_X1TV433ZEee7H_Ximq65pQ" name="id">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_X1TV5H3ZEee7H_Ximq65pQ" name="name">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_X1TV5X3ZEee7H_Ximq65pQ" type="_XwCbYH3ZEee7H_Ximq65pQ" direction="return"/>
+            <language>java</language>
+            <body>setName(name);
+		setID(id);
+		dice = new Dice();
+		setScore(0);
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1TV5n3ZEee7H_Ximq65pQ" name="rollDice" specification="_XwEQkH3ZEee7H_Ximq65pQ">
+            <language>java</language>
+            <body>dice.rollDice();
+		rolls -= 1;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1T88H3ZEee7H_Ximq65pQ" name="setRolls" specification="_XwEQkX3ZEee7H_Ximq65pQ">
+            <language>java</language>
+            <body>this.rolls = 3;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1T88X3ZEee7H_Ximq65pQ" name="lockDie" specification="_XwEQkn3ZEee7H_Ximq65pQ">
+            <ownedParameter xmi:id="_X1T88n3ZEee7H_Ximq65pQ" name="index">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>dice.lockDie(index);
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1T8833ZEee7H_Ximq65pQ" name="getLockedDice" specification="_XwE3oH3ZEee7H_Ximq65pQ">
+            <ownedParameter xmi:id="_X1T89H3ZEee7H_Ximq65pQ" type="_XzYqUH3ZEee7H_Ximq65pQ" direction="return"/>
+            <language>java</language>
+            <body>return dice.getLockedDice();
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1T89X3ZEee7H_Ximq65pQ" name="setID" specification="_XwGFwH3ZEee7H_Ximq65pQ">
+            <ownedParameter xmi:id="_X1T89n3ZEee7H_Ximq65pQ" name="id">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>if(id.equals(null) || id.isEmpty())
+		{
+			throw new IllegalArgumentException(&quot;ID cannot be emtpy&quot;);
+		}else
+		{
+			this.id = id;
+		}
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1T8933ZEee7H_Ximq65pQ" name="getID" specification="_XwGs0H3ZEee7H_Ximq65pQ">
+            <ownedParameter xmi:id="_X1T8-H3ZEee7H_Ximq65pQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>return this.id;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1UkAH3ZEee7H_Ximq65pQ" name="setName" specification="_XwGs0n3ZEee7H_Ximq65pQ">
+            <ownedParameter xmi:id="_X1UkAX3ZEee7H_Ximq65pQ" name="name">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>if(name.equals(null) || name.isEmpty())
+		{
+			throw new IllegalArgumentException(&quot;Name cannot be emtpy&quot;);
+		}else if(name.length() &lt; 2)
+		{
+			throw new IllegalArgumentException(&quot;Name cannot be shorter than 2 letters&quot;);
+		}else
+		{
+			this.name = name;
+		}
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1UkAn3ZEee7H_Ximq65pQ" name="setScore" specification="_XwHT4X3ZEee7H_Ximq65pQ">
+            <ownedParameter xmi:id="_X1UkA33ZEee7H_Ximq65pQ" name="score">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>if(score != 0)
+		{
+			throw new IllegalArgumentException(&quot;Game cannot start with a score different than 0&quot;);
+		}else
+		{
+			this.score = score;
+		}
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1UkBH3ZEee7H_Ximq65pQ" name="addToScore" specification="_XwH68H3ZEee7H_Ximq65pQ">
+            <ownedParameter xmi:id="_X1UkBX3ZEee7H_Ximq65pQ" name="points">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>if(points &lt; 0)
+		{
+			throw new IllegalArgumentException(&quot;Cannot add negative points&quot;);
+		}else
+		{
+			this.score += points;
+		}
+	</body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_XwDpgH3ZEee7H_Ximq65pQ" name="Player" method="_X1TV4n3ZEee7H_Ximq65pQ">
+            <eAnnotations xmi:id="_XwDpg33ZEee7H_Ximq65pQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_XwDphH3ZEee7H_Ximq65pQ" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_XwDpgX3ZEee7H_Ximq65pQ" name="id">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_XwDpgn3ZEee7H_Ximq65pQ" name="name">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_XwDphX3ZEee7H_Ximq65pQ" type="_XwCbYH3ZEee7H_Ximq65pQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_XwEQkH3ZEee7H_Ximq65pQ" name="rollDice" method="_X1TV5n3ZEee7H_Ximq65pQ"/>
+          <ownedOperation xmi:id="_XwEQkX3ZEee7H_Ximq65pQ" name="setRolls" method="_X1T88H3ZEee7H_Ximq65pQ"/>
+          <ownedOperation xmi:id="_XwEQkn3ZEee7H_Ximq65pQ" name="lockDie" method="_X1T88X3ZEee7H_Ximq65pQ">
+            <ownedParameter xmi:id="_XwEQk33ZEee7H_Ximq65pQ" name="index">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_XwE3oH3ZEee7H_Ximq65pQ" name="getLockedDice" method="_X1T8833ZEee7H_Ximq65pQ">
+            <ownedParameter xmi:id="_X0e2gH3ZEee7H_Ximq65pQ" type="_XzYqUH3ZEee7H_Ximq65pQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_XwGFwH3ZEee7H_Ximq65pQ" name="setID" visibility="private" method="_X1T89X3ZEee7H_Ximq65pQ">
+            <ownedParameter xmi:id="_XwGFwX3ZEee7H_Ximq65pQ" name="id">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_XwGs0H3ZEee7H_Ximq65pQ" name="getID" method="_X1T8933ZEee7H_Ximq65pQ">
+            <ownedParameter xmi:id="_XwGs0X3ZEee7H_Ximq65pQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_XwGs0n3ZEee7H_Ximq65pQ" name="setName" visibility="private" method="_X1UkAH3ZEee7H_Ximq65pQ">
+            <ownedParameter xmi:id="_XwHT4H3ZEee7H_Ximq65pQ" name="name">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_XwHT4X3ZEee7H_Ximq65pQ" name="setScore" visibility="private" method="_X1UkAn3ZEee7H_Ximq65pQ">
+            <ownedParameter xmi:id="_XwHT4n3ZEee7H_Ximq65pQ" name="score">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_XwH68H3ZEee7H_Ximq65pQ" name="addToScore" method="_X1UkBH3ZEee7H_Ximq65pQ">
+            <ownedParameter xmi:id="_XwH68X3ZEee7H_Ximq65pQ" name="points">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_X1p7MX3ZEee7H_Ximq65pQ" name="" memberEnd="_X1p7Mn3ZEee7H_Ximq65pQ _X02C4H3ZEee7H_Ximq65pQ">
+          <ownedEnd xmi:id="_X1p7Mn3ZEee7H_Ximq65pQ" name="" type="_XwCbYH3ZEee7H_Ximq65pQ" association="_X1p7MX3ZEee7H_Ximq65pQ"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_XtYwAH3ZEee7H_Ximq65pQ" name="controller">
+      <packagedElement xmi:type="uml:Interface" xmi:id="_Xu5y8H3ZEee7H_Ximq65pQ" name="Controller">
+        <ownedAttribute xmi:id="_Xu_5kH3ZEee7H_Ximq65pQ" name="currentState" type="_XvzK0H3ZEee7H_Ximq65pQ" isReadOnly="true" association="_X1j0kH3ZEee7H_Ximq65pQ"/>
+        <ownedOperation xmi:id="_Xu-EYH3ZEee7H_Ximq65pQ" name="startView"/>
+        <ownedOperation xmi:id="_XzafgH3ZEee7H_Ximq65pQ" name="setState">
+          <ownedParameter xmi:id="_XzafgX3ZEee7H_Ximq65pQ" name="state" type="_XvzK0H3ZEee7H_Ximq65pQ"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_X0O-4H3ZEee7H_Ximq65pQ" name="newGame">
+          <ownedParameter xmi:id="_X0O-4X3ZEee7H_Ximq65pQ" name="players" type="_XzYqUH3ZEee7H_Ximq65pQ"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_XvCV0H3ZEee7H_Ximq65pQ" name="ControllerCommon" isAbstract="true">
+        <ownedAttribute xmi:id="_X0s48H3ZEee7H_Ximq65pQ" name="view" visibility="protected" type="_XwUvQH3ZEee7H_Ximq65pQ" association="_X1lCsX3ZEee7H_Ximq65pQ"/>
+        <ownedAttribute xmi:id="_X0tgAX3ZEee7H_Ximq65pQ" name="model" visibility="protected" type="_Xv9i4H3ZEee7H_Ximq65pQ" association="_X1lCtH3ZEee7H_Ximq65pQ"/>
+        <ownedAttribute xmi:id="_X0tgA33ZEee7H_Ximq65pQ" name="gameState" visibility="private" type="_XvzK0H3ZEee7H_Ximq65pQ" association="_X1lpwX3ZEee7H_Ximq65pQ"/>
+        <interfaceRealization xmi:id="_Xzdi0H3ZEee7H_Ximq65pQ" client="_XvCV0H3ZEee7H_Ximq65pQ" supplier="_Xu5y8H3ZEee7H_Ximq65pQ" contract="_Xu5y8H3ZEee7H_Ximq65pQ"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1HIoH3ZEee7H_Ximq65pQ" name="ControllerCommon" specification="_XzeJ4H3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_X1HIon3ZEee7H_Ximq65pQ" name="view" type="_XwUvQH3ZEee7H_Ximq65pQ"/>
+          <ownedParameter xmi:id="_X1HIo33ZEee7H_Ximq65pQ" type="_XvCV0H3ZEee7H_Ximq65pQ" direction="return"/>
+          <language>java</language>
+          <body>setView(view);
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1Jk4H3ZEee7H_Ximq65pQ" name="getModel" specification="_XvEyEH3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_X1Jk4X3ZEee7H_Ximq65pQ" type="_Xv9i4H3ZEee7H_Ximq65pQ" direction="return"/>
+          <language>java</language>
+          <body>return model;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1Jk4n3ZEee7H_Ximq65pQ" name="setModel" specification="_Xzf_EX3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_X1Jk433ZEee7H_Ximq65pQ" name="model" type="_Xv9i4H3ZEee7H_Ximq65pQ"/>
+          <language>java</language>
+          <body>if (model == null) {
+         throw new ControllerException(&quot;Invalid Model&quot;);
+     }
+     this.model = model;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1Jk5H3ZEee7H_Ximq65pQ" name="getView" specification="_XvGAMH3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_X1Jk5X3ZEee7H_Ximq65pQ" type="_XwcrEH3ZEee7H_Ximq65pQ" direction="return"/>
+          <language>java</language>
+          <body>return view;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1KL8H3ZEee7H_Ximq65pQ" name="setView" specification="_Xzf_FH3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_X1KL8X3ZEee7H_Ximq65pQ" name="view" type="_XwUvQH3ZEee7H_Ximq65pQ"/>
+          <language>java</language>
+          <body>if (view == null) {
+         throw new ControllerException(&quot;Invalid View&quot;);
+     }
+     this.view = view;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1KL8n3ZEee7H_Ximq65pQ" name="setState" specification="_XzgmIX3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_X1KL833ZEee7H_Ximq65pQ" name="state" type="_XvzK0H3ZEee7H_Ximq65pQ"/>
+          <language>java</language>
+          <body>this.gameState = state;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1KL9H3ZEee7H_Ximq65pQ" name="getCurrentState" specification="_XvGnQH3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_X1KL9X3ZEee7H_Ximq65pQ" type="_XvzK0H3ZEee7H_Ximq65pQ" direction="return"/>
+          <language>java</language>
+          <body>return this.gameState;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1KL9n3ZEee7H_Ximq65pQ" name="newGame" specification="_X0QNAH3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_X1KL933ZEee7H_Ximq65pQ" name="players" type="_XzYqUH3ZEee7H_Ximq65pQ"/>
+          <language>java</language>
+          <body>gameState.newGame(players, this);
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1KL-H3ZEee7H_Ximq65pQ" name="startGame" specification="_XzhNM33ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_X1KL-X3ZEee7H_Ximq65pQ" name="context" type="_Xu5y8H3ZEee7H_Ximq65pQ"/>
+          <language>java</language>
+          <body>gameState.startGame(context);
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1KL-n3ZEee7H_Ximq65pQ" name="startTurn" specification="_Xzh0QH3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_X1KL-33ZEee7H_Ximq65pQ" name="currentPlayer" type="_XwCbYH3ZEee7H_Ximq65pQ"/>
+          <language>java</language>
+          <body>gameState.turn(this, currentPlayer);
+ </body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_XvEyEH3ZEee7H_Ximq65pQ" name="getModel" visibility="protected" method="_X1Jk4H3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_Xzf_EH3ZEee7H_Ximq65pQ" type="_Xv9i4H3ZEee7H_Ximq65pQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_XvGAMH3ZEee7H_Ximq65pQ" name="getView" visibility="protected" method="_X1Jk5H3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_Xzf_E33ZEee7H_Ximq65pQ" type="_XwcrEH3ZEee7H_Ximq65pQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_XvGnQH3ZEee7H_Ximq65pQ" name="getCurrentState" method="_X1KL9H3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_XzhNMn3ZEee7H_Ximq65pQ" type="_XvzK0H3ZEee7H_Ximq65pQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_XzeJ4H3ZEee7H_Ximq65pQ" name="ControllerCommon" method="_X1HIoH3ZEee7H_Ximq65pQ" raisedException="_XvQ_UH3ZEee7H_Ximq65pQ">
+          <eAnnotations xmi:id="_XzeJ4n3ZEee7H_Ximq65pQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_XzeJ433ZEee7H_Ximq65pQ" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_XzeJ4X3ZEee7H_Ximq65pQ" name="view" type="_XwUvQH3ZEee7H_Ximq65pQ"/>
+          <ownedParameter xmi:id="_XzeJ5H3ZEee7H_Ximq65pQ" type="_XvCV0H3ZEee7H_Ximq65pQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_Xzf_EX3ZEee7H_Ximq65pQ" name="setModel" visibility="protected" method="_X1Jk4n3ZEee7H_Ximq65pQ" raisedException="_XvQ_UH3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_Xzf_En3ZEee7H_Ximq65pQ" name="model" type="_Xv9i4H3ZEee7H_Ximq65pQ"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_Xzf_FH3ZEee7H_Ximq65pQ" name="setView" visibility="private" method="_X1KL8H3ZEee7H_Ximq65pQ" raisedException="_XvQ_UH3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_XzgmIH3ZEee7H_Ximq65pQ" name="view" type="_XwUvQH3ZEee7H_Ximq65pQ"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_XzgmIX3ZEee7H_Ximq65pQ" name="setState" method="_X1KL8n3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_XzgmIn3ZEee7H_Ximq65pQ" name="state" type="_XvzK0H3ZEee7H_Ximq65pQ"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_XzhNM33ZEee7H_Ximq65pQ" name="startGame" method="_X1KL-H3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_XzhNNH3ZEee7H_Ximq65pQ" name="context" type="_Xu5y8H3ZEee7H_Ximq65pQ"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_Xzh0QH3ZEee7H_Ximq65pQ" name="startTurn" method="_X1KL-n3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_Xzh0QX3ZEee7H_Ximq65pQ" name="currentPlayer" type="_XwCbYH3ZEee7H_Ximq65pQ"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_X0QNAH3ZEee7H_Ximq65pQ" name="newGame" method="_X1KL9n3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_X0QNAX3ZEee7H_Ximq65pQ" name="players" type="_XzYqUH3ZEee7H_Ximq65pQ"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_XvQ_UH3ZEee7H_Ximq65pQ" name="ControllerException">
+        <generalization xmi:id="_X0SpQX3ZEee7H_Ximq65pQ" general="_X0SCMX3ZEee7H_Ximq65pQ"/>
+        <ownedAttribute xmi:id="_X0uHEX3ZEee7H_Ximq65pQ" name="serialVersionUID" visibility="private" isLeaf="true" isStatic="true" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_X0uuIH3ZEee7H_Ximq65pQ" value="1L"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1KzAH3ZEee7H_Ximq65pQ" name="ControllerException" specification="_XvRmYH3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_X1KzAX3ZEee7H_Ximq65pQ" name="message">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_X1KzAn3ZEee7H_Ximq65pQ" type="_XvQ_UH3ZEee7H_Ximq65pQ" direction="return"/>
+          <language>java</language>
+          <body>super(message);
+ </body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_XvRmYH3ZEee7H_Ximq65pQ" name="ControllerException" method="_X1KzAH3ZEee7H_Ximq65pQ">
+          <eAnnotations xmi:id="_XvSNcX3ZEee7H_Ximq65pQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_XvSNcn3ZEee7H_Ximq65pQ" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_XvSNcH3ZEee7H_Ximq65pQ" name="message">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_XvSNc33ZEee7H_Ximq65pQ" type="_XvQ_UH3ZEee7H_Ximq65pQ" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_XvTbkH3ZEee7H_Ximq65pQ" name="GameController">
+        <generalization xmi:id="_Xzk3kX3ZEee7H_Ximq65pQ" general="_XvCV0H3ZEee7H_Ximq65pQ"/>
+        <ownedAttribute xmi:id="_X0uuIX3ZEee7H_Ximq65pQ" name="playerControllers" type="_XvawUH3ZEee7H_Ximq65pQ" isReadOnly="true" association="_X1mQ0H3ZEee7H_Ximq65pQ">
+          <qualifier xmi:id="_X0vVMH3ZEee7H_Ximq65pQ">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </qualifier>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1KzA33ZEee7H_Ximq65pQ" name="GameController" specification="_XzjCYX3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_X1KzBH3ZEee7H_Ximq65pQ" name="view" type="_XwUvQH3ZEee7H_Ximq65pQ"/>
+          <ownedParameter xmi:id="_X1KzBX3ZEee7H_Ximq65pQ" type="_XvTbkH3ZEee7H_Ximq65pQ" direction="return"/>
+          <language>java</language>
+          <body>super(view);&#xD;
+     view.setController(this);&#xD;
+     Facade model = new Facade(this);&#xD;
+     setModel(model);&#xD;
+     playerControllers = new HashMap&lt;>();&#xD;
+&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1KzBn3ZEee7H_Ximq65pQ" name="startView" specification="_XvUpsH3ZEee7H_Ximq65pQ">
+          <language>java</language>
+          <body>getView().start();&#xD;
+     &#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1LaEH3ZEee7H_Ximq65pQ" name="newGame" specification="_X0TQUH3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_X1LaEX3ZEee7H_Ximq65pQ" name="players" type="_XzYqUH3ZEee7H_Ximq65pQ"/>
+          <language>java</language>
+          <body>setState(new NewGameState(model));&#xD;
+ 	model.newGame(players);&#xD;
+ 	for(int i = 1; i &lt; players.size() + 1; i++)&#xD;
+ 	{&#xD;
+ 		String id = &quot;player&quot;+i;&#xD;
+ 		System.out.println(id);&#xD;
+ 		newPlayer(view, id);&#xD;
+ 		view.getPlayerPanels().put(id, new GameBoard(players.get(id), this.getPlayerController(id)));&#xD;
+ 		view.getPlayerPanels().get(id).start();&#xD;
+&#xD;
+ 	}&#xD;
+ 	getCurrentState().newGame(players, this);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1LaEn3ZEee7H_Ximq65pQ" name="turns" specification="_Xzjpc33ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_X1LaE33ZEee7H_Ximq65pQ" name="currentState" type="_XvzK0H3ZEee7H_Ximq65pQ"/>
+          <language>java</language>
+          <body>System.out.println(currentState.getCurrentPlayer().getName() +&quot;, &quot; + getCurrentPlayer().getPlayer().getName());&#xD;
+		//String nextPlayerID = getPlayer().getID().substring(0, 6) + (Integer.parseInt(getPlayer().getID().substring(6)) + 1);&#xD;
+		for(int i = 1; i &lt; playerControllers.size() + 1; i++)&#xD;
+		{&#xD;
+			System.out.println(currentState.getCurrentPlayer().getRolls());&#xD;
+			if(currentState.getCurrentPlayer().getRolls() == 0)&#xD;
+			{&#xD;
+				getPlayerController(&quot;player&quot;+i).startTurn(currentState);&#xD;
+			}&#xD;
+		}&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1LaFH3ZEee7H_Ximq65pQ" name="getCurrentPlayer" specification="_XvVQwn3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_X1LaFX3ZEee7H_Ximq65pQ" type="_XvawUH3ZEee7H_Ximq65pQ" direction="return"/>
+          <language>java</language>
+          <body>if(getCurrentState().getCurrentPlayer() != null)&#xD;
+		{&#xD;
+			return playerControllers.get(getCurrentState().getCurrentPlayer().getID());&#xD;
+		}&#xD;
+		else return null;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1LaFn3ZEee7H_Ximq65pQ" name="startGame" specification="_XvV30H3ZEee7H_Ximq65pQ">
+          <language>java</language>
+          <body>startGame(this);&#xD;
+		view.update();&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1LaF33ZEee7H_Ximq65pQ" name="newPlayer" specification="_XzkQgn3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_X1LaGH3ZEee7H_Ximq65pQ" name="view" type="_XwUvQH3ZEee7H_Ximq65pQ"/>
+          <ownedParameter xmi:id="_X1LaGX3ZEee7H_Ximq65pQ" name="id">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>try {&#xD;
+			playerControllers.put(id, new PlayerController(this, view, this.model, id));&#xD;
+		} catch (ControllerException e) {&#xD;
+			e.printStackTrace();&#xD;
+		}&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1LaGn3ZEee7H_Ximq65pQ" name="getPlayerController" specification="_XvWe4H3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_X1LaG33ZEee7H_Ximq65pQ" name="id">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_X1LaHH3ZEee7H_Ximq65pQ" type="_XvawUH3ZEee7H_Ximq65pQ" direction="return"/>
+          <language>java</language>
+          <body>return this.playerControllers.get(id);&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_XvUpsH3ZEee7H_Ximq65pQ" name="startView" method="_X1KzBn3ZEee7H_Ximq65pQ"/>
+        <ownedOperation xmi:id="_XvVQwn3ZEee7H_Ximq65pQ" name="getCurrentPlayer" method="_X1LaFH3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_XzkQgX3ZEee7H_Ximq65pQ" type="_XvawUH3ZEee7H_Ximq65pQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_XvV30H3ZEee7H_Ximq65pQ" name="startGame" method="_X1LaFn3ZEee7H_Ximq65pQ"/>
+        <ownedOperation xmi:id="_XvWe4H3ZEee7H_Ximq65pQ" name="getPlayerController" method="_X1LaGn3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_XvWe4X3ZEee7H_Ximq65pQ" name="id">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_Xzk3kH3ZEee7H_Ximq65pQ" type="_XvawUH3ZEee7H_Ximq65pQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_XzjCYX3ZEee7H_Ximq65pQ" name="GameController" method="_X1KzA33ZEee7H_Ximq65pQ" raisedException="_XvQ_UH3ZEee7H_Ximq65pQ">
+          <eAnnotations xmi:id="_XzjpcH3ZEee7H_Ximq65pQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_XzjpcX3ZEee7H_Ximq65pQ" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_XzjCYn3ZEee7H_Ximq65pQ" name="view" type="_XwUvQH3ZEee7H_Ximq65pQ"/>
+          <ownedParameter xmi:id="_Xzjpcn3ZEee7H_Ximq65pQ" type="_XvTbkH3ZEee7H_Ximq65pQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_Xzjpc33ZEee7H_Ximq65pQ" name="turns" method="_X1LaEn3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_XzkQgH3ZEee7H_Ximq65pQ" name="currentState" type="_XvzK0H3ZEee7H_Ximq65pQ"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_XzkQgn3ZEee7H_Ximq65pQ" name="newPlayer" method="_X1LaF33ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_XzkQg33ZEee7H_Ximq65pQ" name="view" type="_XwUvQH3ZEee7H_Ximq65pQ"/>
+          <ownedParameter xmi:id="_XzkQhH3ZEee7H_Ximq65pQ" name="id">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_X0TQUH3ZEee7H_Ximq65pQ" name="newGame" method="_X1LaEH3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_X0TQUX3ZEee7H_Ximq65pQ" name="players" type="_XzYqUH3ZEee7H_Ximq65pQ"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_XvawUH3ZEee7H_Ximq65pQ" name="PlayerController">
+        <generalization xmi:id="_Xzn64H3ZEee7H_Ximq65pQ" general="_XvCV0H3ZEee7H_Ximq65pQ"/>
+        <ownedAttribute xmi:id="_X0vVMX3ZEee7H_Ximq65pQ" name="player" type="_XwCbYH3ZEee7H_Ximq65pQ" isReadOnly="true" association="_X1mQ033ZEee7H_Ximq65pQ"/>
+        <ownedAttribute xmi:id="_X0vVMn3ZEee7H_Ximq65pQ" name="clickHandler" visibility="private" type="_XvisIH3ZEee7H_Ximq65pQ" association="_X1m34X3ZEee7H_Ximq65pQ"/>
+        <ownedAttribute xmi:id="_X0v8QX3ZEee7H_Ximq65pQ" name="game" visibility="private" type="_XvTbkH3ZEee7H_Ximq65pQ" association="_X1m35H3ZEee7H_Ximq65pQ"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1MBIH3ZEee7H_Ximq65pQ" name="PlayerController" specification="_XzmswH3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_X1MBIX3ZEee7H_Ximq65pQ" name="controller" type="_XvTbkH3ZEee7H_Ximq65pQ"/>
+          <ownedParameter xmi:id="_X1MBIn3ZEee7H_Ximq65pQ" name="view" type="_XwUvQH3ZEee7H_Ximq65pQ"/>
+          <ownedParameter xmi:id="_X1MBI33ZEee7H_Ximq65pQ" name="model" type="_Xv9i4H3ZEee7H_Ximq65pQ"/>
+          <ownedParameter xmi:id="_X1MBJH3ZEee7H_Ximq65pQ" name="id">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_X1MBJX3ZEee7H_Ximq65pQ" type="_XvawUH3ZEee7H_Ximq65pQ" direction="return"/>
+          <language>java</language>
+          <body>super(view);		&#xD;
+		setModel(model);&#xD;
+		setPlayer(id);&#xD;
+		game = controller;&#xD;
+		clickHandler = new MouseClickHandler();&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1MBJn3ZEee7H_Ximq65pQ" name="setPlayer" specification="_XvclgH3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_X1MBJ33ZEee7H_Ximq65pQ" name="id">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>if(id.equals(null) || id.isEmpty())&#xD;
+		{&#xD;
+			throw new IllegalArgumentException(&quot;invalid ID&quot;);&#xD;
+		}else&#xD;
+		{&#xD;
+			this.player = model.getPlayer(id);&#xD;
+		}&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1MBKH3ZEee7H_Ximq65pQ" name="startTurn" specification="_XznT1X3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_X1MBKX3ZEee7H_Ximq65pQ" name="currentState" type="_XvzK0H3ZEee7H_Ximq65pQ"/>
+          <language>java</language>
+          <body>if(currentState.getCurrentPlayer().equals(getPlayer()))&#xD;
+		{&#xD;
+			setState(currentState);&#xD;
+		}else&#xD;
+		{&#xD;
+			setState(new TurnState(model, getPlayer()));&#xD;
+		}&#xD;
+		startTurn(getPlayer());&#xD;
+		view.getPlayerPanels().get(getPlayer().getID()).getDiceBoard().addMouseClickListener(clickHandler);&#xD;
+&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1MoMH3ZEee7H_Ximq65pQ" name="getPlayerName" specification="_XvdMkH3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_X1MoMX3ZEee7H_Ximq65pQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return model.getPlayer(player.getID()).getName();&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1MoMn3ZEee7H_Ximq65pQ" name="rollDice" specification="_XvdzoH3ZEee7H_Ximq65pQ">
+          <language>java</language>
+          <body>model.rollDice(getPlayer().getID());&#xD;
+		&#xD;
+		//model.getPlayer(getPlayer().getID()).rollDice();&#xD;
+		//System.out.println(model.getPlayer(getPlayer().getID()).getDice());&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1MoM33ZEee7H_Ximq65pQ" name="getDice" specification="_XvdzoX3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_X1MoNH3ZEee7H_Ximq65pQ" type="_XzYqUH3ZEee7H_Ximq65pQ" direction="return"/>
+          <language>java</language>
+          <body>return model.getPlayerDice(getPlayer().getID());&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1MoNX3ZEee7H_Ximq65pQ" name="lockDie" specification="_Xvfo0H3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_X1MoNn3ZEee7H_Ximq65pQ" name="index">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>model.lockDie(getPlayer().getID(), index);&#xD;
+		view.update();&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1MoN33ZEee7H_Ximq65pQ" name="getLockedDice" specification="_Xvfo0n3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_X1MoOH3ZEee7H_Ximq65pQ" type="_XzYqUH3ZEee7H_Ximq65pQ" direction="return"/>
+          <language>java</language>
+          <body>return model.getPlayer(getPlayer().getID()).getLockedDice();&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1NPQH3ZEee7H_Ximq65pQ" name="startView" specification="_XvheAH3ZEee7H_Ximq65pQ">
+          <language>java</language>
+          <body>getView().start();&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_XvclgH3ZEee7H_Ximq65pQ" name="setPlayer" visibility="private" method="_X1MBJn3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_XvclgX3ZEee7H_Ximq65pQ" name="id">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_XvdMkH3ZEee7H_Ximq65pQ" name="getPlayerName" method="_X1MoMH3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_XvdMkX3ZEee7H_Ximq65pQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_XvdzoH3ZEee7H_Ximq65pQ" name="rollDice" method="_X1MoMn3ZEee7H_Ximq65pQ"/>
+        <ownedOperation xmi:id="_XvdzoX3ZEee7H_Ximq65pQ" name="getDice" method="_X1MoM33ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_X0UecH3ZEee7H_Ximq65pQ" type="_XzYqUH3ZEee7H_Ximq65pQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_Xvfo0H3ZEee7H_Ximq65pQ" name="lockDie" method="_X1MoNX3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_Xvfo0X3ZEee7H_Ximq65pQ" name="index">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_Xvfo0n3ZEee7H_Ximq65pQ" name="getLockedDice" method="_X1MoN33ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_X0UecX3ZEee7H_Ximq65pQ" type="_XzYqUH3ZEee7H_Ximq65pQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_XvheAH3ZEee7H_Ximq65pQ" name="startView" method="_X1NPQH3ZEee7H_Ximq65pQ"/>
+        <ownedOperation xmi:id="_XzmswH3ZEee7H_Ximq65pQ" name="PlayerController" method="_X1MBIH3ZEee7H_Ximq65pQ" raisedException="_XvQ_UH3ZEee7H_Ximq65pQ">
+          <eAnnotations xmi:id="_XznT0n3ZEee7H_Ximq65pQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_XznT033ZEee7H_Ximq65pQ" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_XzmswX3ZEee7H_Ximq65pQ" name="controller" type="_XvTbkH3ZEee7H_Ximq65pQ"/>
+          <ownedParameter xmi:id="_Xzmswn3ZEee7H_Ximq65pQ" name="view" type="_XwUvQH3ZEee7H_Ximq65pQ"/>
+          <ownedParameter xmi:id="_XznT0H3ZEee7H_Ximq65pQ" name="model" type="_Xv9i4H3ZEee7H_Ximq65pQ"/>
+          <ownedParameter xmi:id="_XznT0X3ZEee7H_Ximq65pQ" name="id">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_XznT1H3ZEee7H_Ximq65pQ" type="_XvawUH3ZEee7H_Ximq65pQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_XznT1X3ZEee7H_Ximq65pQ" name="startTurn" method="_X1MBKH3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_XznT1n3ZEee7H_Ximq65pQ" name="currentState" type="_XvzK0H3ZEee7H_Ximq65pQ"/>
+        </ownedOperation>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_XvisIH3ZEee7H_Ximq65pQ" name="MouseClickHandler" visibility="private">
+          <generalization xmi:id="_X0VFgH3ZEee7H_Ximq65pQ" general="_XzleoH3ZEee7H_Ximq65pQ"/>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1NPQX3ZEee7H_Ximq65pQ" name="mouseClicked" specification="_X0Uecn3ZEee7H_Ximq65pQ">
+            <ownedParameter xmi:id="_X1NPQn3ZEee7H_Ximq65pQ" name="event" type="_XzmFsX3ZEee7H_Ximq65pQ"/>
+            <language>java</language>
+            <body>if(getPlayer().getRolls() == 0)&#xD;
+			{&#xD;
+				view.getPlayerPanels().get(getPlayer().getID()).getDiceBoard().removeMouseListener(clickHandler);&#xD;
+			}else&#xD;
+			{&#xD;
+				rollDice();&#xD;
+			}&#xD;
+			view.update();&#xD;
+		</body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_X0Uecn3ZEee7H_Ximq65pQ" name="mouseClicked" method="_X1NPQX3ZEee7H_Ximq65pQ">
+            <ownedParameter xmi:id="_X0Uec33ZEee7H_Ximq65pQ" name="event" type="_XzmFsX3ZEee7H_Ximq65pQ"/>
+          </ownedOperation>
+        </nestedClassifier>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_X1j0kH3ZEee7H_Ximq65pQ" name="" memberEnd="_X1j0kX3ZEee7H_Ximq65pQ _Xu_5kH3ZEee7H_Ximq65pQ">
+        <ownedEnd xmi:id="_X1j0kX3ZEee7H_Ximq65pQ" name="" type="_Xu5y8H3ZEee7H_Ximq65pQ" association="_X1j0kH3ZEee7H_Ximq65pQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_X1lCsX3ZEee7H_Ximq65pQ" name="" memberEnd="_X1lCsn3ZEee7H_Ximq65pQ _X0s48H3ZEee7H_Ximq65pQ">
+        <ownedEnd xmi:id="_X1lCsn3ZEee7H_Ximq65pQ" name="" type="_XvCV0H3ZEee7H_Ximq65pQ" association="_X1lCsX3ZEee7H_Ximq65pQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_X1lCtH3ZEee7H_Ximq65pQ" name="" memberEnd="_X1lCtX3ZEee7H_Ximq65pQ _X0tgAX3ZEee7H_Ximq65pQ">
+        <ownedEnd xmi:id="_X1lCtX3ZEee7H_Ximq65pQ" name="" type="_XvCV0H3ZEee7H_Ximq65pQ" association="_X1lCtH3ZEee7H_Ximq65pQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_X1lpwX3ZEee7H_Ximq65pQ" name="" memberEnd="_X1lpwn3ZEee7H_Ximq65pQ _X0tgA33ZEee7H_Ximq65pQ">
+        <ownedEnd xmi:id="_X1lpwn3ZEee7H_Ximq65pQ" name="" type="_XvCV0H3ZEee7H_Ximq65pQ" association="_X1lpwX3ZEee7H_Ximq65pQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_X1mQ0H3ZEee7H_Ximq65pQ" name="" memberEnd="_X1mQ0X3ZEee7H_Ximq65pQ _X0uuIX3ZEee7H_Ximq65pQ">
+        <ownedEnd xmi:id="_X1mQ0X3ZEee7H_Ximq65pQ" name="" type="_XvTbkH3ZEee7H_Ximq65pQ" association="_X1mQ0H3ZEee7H_Ximq65pQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_X1mQ033ZEee7H_Ximq65pQ" name="" memberEnd="_X1mQ1H3ZEee7H_Ximq65pQ _X0vVMX3ZEee7H_Ximq65pQ">
+        <ownedEnd xmi:id="_X1mQ1H3ZEee7H_Ximq65pQ" name="" type="_XvawUH3ZEee7H_Ximq65pQ" association="_X1mQ033ZEee7H_Ximq65pQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_X1m34X3ZEee7H_Ximq65pQ" name="" memberEnd="_X1m34n3ZEee7H_Ximq65pQ _X0vVMn3ZEee7H_Ximq65pQ">
+        <ownedEnd xmi:id="_X1m34n3ZEee7H_Ximq65pQ" name="" type="_XvawUH3ZEee7H_Ximq65pQ" association="_X1m34X3ZEee7H_Ximq65pQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_X1m35H3ZEee7H_Ximq65pQ" name="" memberEnd="_X1m35X3ZEee7H_Ximq65pQ _X0v8QX3ZEee7H_Ximq65pQ">
+        <ownedEnd xmi:id="_X1m35X3ZEee7H_Ximq65pQ" name="" type="_XvawUH3ZEee7H_Ximq65pQ" association="_X1m35H3ZEee7H_Ximq65pQ"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_XtalMn3ZEee7H_Ximq65pQ" name="view">
+      <packagedElement xmi:type="uml:Class" xmi:id="_XwJJEH3ZEee7H_Ximq65pQ" name="DicePanel">
+        <generalization xmi:id="_X0h5033ZEee7H_Ximq65pQ" general="_Xz-gMX3ZEee7H_Ximq65pQ"/>
+        <ownedAttribute xmi:id="_X034EH3ZEee7H_Ximq65pQ" name="serialVersionUID" visibility="private" isLeaf="true" isStatic="true" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_X034EX3ZEee7H_Ximq65pQ" value="1L"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_X034En3ZEee7H_Ximq65pQ" name="controller" visibility="private" type="_XvawUH3ZEee7H_Ximq65pQ" association="_X1qiQX3ZEee7H_Ximq65pQ"/>
+        <ownedAttribute xmi:id="_X04fIH3ZEee7H_Ximq65pQ" name="name" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_X04fIX3ZEee7H_Ximq65pQ" name="diceList" visibility="private" type="_Xz-gMX3ZEee7H_Ximq65pQ" association="_X1rJUX3ZEee7H_Ximq65pQ"/>
+        <ownedAttribute xmi:id="_X04fI33ZEee7H_Ximq65pQ" name="rollDice" visibility="private" type="_Xz95IX3ZEee7H_Ximq65pQ" association="_X1rwYX3ZEee7H_Ximq65pQ"/>
+        <ownedAttribute xmi:id="_X05GMX3ZEee7H_Ximq65pQ" name="lockedDice" type="_Xz-gMX3ZEee7H_Ximq65pQ" association="_X1rwZH3ZEee7H_Ximq65pQ"/>
+        <ownedAttribute xmi:id="_X06UUX3ZEee7H_Ximq65pQ" name="lockActionListener" visibility="package" type="_Xz8D8H3ZEee7H_Ximq65pQ" association="_X1sXcX3ZEee7H_Ximq65pQ">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_X067YH3ZEee7H_Ximq65pQ" value="actionEvent -> {&#xD;&#xA;        AbstractButton aButton = (AbstractButton) actionEvent.getSource();&#xD;&#xA;        System.out.println(&quot;clicked &quot; + aButton.getName() + &quot; value:&quot; + aButton.getText());&#xD;&#xA;        controller.lockDie(Integer.parseInt(aButton.getName()));&#xD;&#xA;    }"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1VyIH3ZEee7H_Ximq65pQ" name="DicePanel" specification="_Xz_uUH3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_X1VyIX3ZEee7H_Ximq65pQ" name="controller" type="_XvawUH3ZEee7H_Ximq65pQ"/>
+          <ownedParameter xmi:id="_X1VyIn3ZEee7H_Ximq65pQ" name="name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_X1VyI33ZEee7H_Ximq65pQ" type="_XwJJEH3ZEee7H_Ximq65pQ" direction="return"/>
+          <language>java</language>
+          <body>Dimension size = getPreferredSize();&#xD;
+		size.width = 700;&#xD;
+		size.height = 500;&#xD;
+		this.setPreferredSize(size);&#xD;
+		this.setLayout(null);&#xD;
+		&#xD;
+		setPlayerName(name);&#xD;
+		this.controller = controller;&#xD;
+		&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1VyJH3ZEee7H_Ximq65pQ" name="start" specification="_XwK-QH3ZEee7H_Ximq65pQ">
+          <language>java</language>
+          <body>getDice();&#xD;
+		&#xD;
+		rollDice = new JButton(&quot;Roll dice&quot;);&#xD;
+		rollDice.setLocation(50, 220);&#xD;
+		rollDice.setSize(new Dimension(100, 25));&#xD;
+		this.add(rollDice);&#xD;
+		&#xD;
+		diceList = new JPanel();&#xD;
+		diceList.setBackground(Color.GRAY);&#xD;
+		diceList.setLocation(0, 250);&#xD;
+		diceList.setSize(new Dimension(300, 50));&#xD;
+		for(int i = 0; i &lt; getDice().size(); i++)&#xD;
+		{&#xD;
+			JButton die = new JButton(getDice().get(i).toString());&#xD;
+			die.setLocation(0 + i * 50 + 50, 0);&#xD;
+			die.setSize(new Dimension(45, 50));&#xD;
+			diceList.add(die);&#xD;
+		}&#xD;
+		this.add(diceList);&#xD;
+		&#xD;
+		lockedDice = new JPanel();&#xD;
+		lockedDice.setBackground(Color.GRAY);&#xD;
+		lockedDice.setSize(new Dimension(300, 50));&#xD;
+		lockedDice.setLocation(0, 50);&#xD;
+		this.add(lockedDice);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1VyJX3ZEee7H_Ximq65pQ" name="setDice" specification="_X0hSwH3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_X1VyJn3ZEee7H_Ximq65pQ" name="rolled" type="_XzYqUH3ZEee7H_Ximq65pQ"/>
+          <language>java</language>
+          <body>diceList.removeAll();&#xD;
+		for (int i = 0; i &lt; rolled.size(); i++) {&#xD;
+			this.getDice().put(i, rolled.get(i));&#xD;
+			JButton die = new JButton(getDice().get(i).toString());&#xD;
+			die.setLocation(0 + i * 50 + 50, 0);&#xD;
+			die.setSize(new Dimension(45, 50));&#xD;
+			die.setName(&quot;&quot;+i);&#xD;
+			if(die.getText().equals(&quot;&quot;+0) || die.getText().equals(&quot;&quot;+-1))&#xD;
+			{&#xD;
+				die.setVisible(false);&#xD;
+			}&#xD;
+			die.addActionListener(lockActionListener);&#xD;
+			this.diceList.add(die);			&#xD;
+&#xD;
+		}&#xD;
+		diceList.repaint();&#xD;
+&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1VyJ33ZEee7H_Ximq65pQ" name="getDice" specification="_XwK-QX3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_X1VyKH3ZEee7H_Ximq65pQ" type="_XzYqUH3ZEee7H_Ximq65pQ" direction="return"/>
+          <language>java</language>
+          <body>return controller.getPlayer().getDice();&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1VyKX3ZEee7H_Ximq65pQ" name="setPlayerName" specification="_XwMMYX3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_X1VyKn3ZEee7H_Ximq65pQ" name="name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>this.name = name;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1WZMH3ZEee7H_Ximq65pQ" name="addMouseClickListener" specification="_X0h50X3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_X1WZMX3ZEee7H_Ximq65pQ" name="listener" type="_Xz8D8n3ZEee7H_Ximq65pQ"/>
+          <language>java</language>
+          <body>rollDice.addMouseListener(listener);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_XwK-QH3ZEee7H_Ximq65pQ" name="start" method="_X1VyJH3ZEee7H_Ximq65pQ"/>
+        <ownedOperation xmi:id="_XwK-QX3ZEee7H_Ximq65pQ" name="getDice" method="_X1VyJ33ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_X0h50H3ZEee7H_Ximq65pQ" type="_XzYqUH3ZEee7H_Ximq65pQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_XwMMYX3ZEee7H_Ximq65pQ" name="setPlayerName" visibility="private" method="_X1VyKX3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_XwMMYn3ZEee7H_Ximq65pQ" name="name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_Xz_uUH3ZEee7H_Ximq65pQ" name="DicePanel" visibility="package" method="_X1VyIH3ZEee7H_Ximq65pQ">
+          <eAnnotations xmi:id="_Xz_uU33ZEee7H_Ximq65pQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_Xz_uVH3ZEee7H_Ximq65pQ" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_Xz_uUX3ZEee7H_Ximq65pQ" name="controller" type="_XvawUH3ZEee7H_Ximq65pQ"/>
+          <ownedParameter xmi:id="_Xz_uUn3ZEee7H_Ximq65pQ" name="name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_Xz_uVX3ZEee7H_Ximq65pQ" type="_XwJJEH3ZEee7H_Ximq65pQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_X0hSwH3ZEee7H_Ximq65pQ" name="setDice" method="_X1VyJX3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_X0hSwX3ZEee7H_Ximq65pQ" name="rolled" type="_XzYqUH3ZEee7H_Ximq65pQ"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_X0h50X3ZEee7H_Ximq65pQ" name="addMouseClickListener" method="_X1WZMH3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_X0h50n3ZEee7H_Ximq65pQ" name="listener" type="_Xz8D8n3ZEee7H_Ximq65pQ"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_XwPPsH3ZEee7H_Ximq65pQ" name="GameBoard">
+        <generalization xmi:id="_X0k9In3ZEee7H_Ximq65pQ" general="_X0HDEH3ZEee7H_Ximq65pQ"/>
+        <ownedAttribute xmi:id="_X07icH3ZEee7H_Ximq65pQ" name="serialVersionUID" visibility="private" isLeaf="true" isStatic="true" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_X07icX3ZEee7H_Ximq65pQ" value="1L"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_X07icn3ZEee7H_Ximq65pQ" name="controller" visibility="private" type="_XvawUH3ZEee7H_Ximq65pQ" isReadOnly="true" association="_X1sXdH3ZEee7H_Ximq65pQ"/>
+        <ownedAttribute xmi:id="_X07ic33ZEee7H_Ximq65pQ" name="name" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_X08JgX3ZEee7H_Ximq65pQ" name="playing" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_X08Jg33ZEee7H_Ximq65pQ" name="titleLabel" visibility="private" type="_X0jvAH3ZEee7H_Ximq65pQ" association="_X1s-gX3ZEee7H_Ximq65pQ"/>
+        <ownedAttribute xmi:id="_X08wkX3ZEee7H_Ximq65pQ" name="nameLabel" visibility="private" type="_X0jvAH3ZEee7H_Ximq65pQ" association="_X1tlkH3ZEee7H_Ximq65pQ"/>
+        <ownedAttribute xmi:id="_X08wk33ZEee7H_Ximq65pQ" name="diceBoard" type="_XwJJEH3ZEee7H_Ximq65pQ" isReadOnly="true" association="_X1tlk33ZEee7H_Ximq65pQ"/>
+        <interfaceRealization xmi:id="_X0D_wX3ZEee7H_Ximq65pQ" client="_XwPPsH3ZEee7H_Ximq65pQ" supplier="_XwcrEH3ZEee7H_Ximq65pQ" contract="_XwcrEH3ZEee7H_Ximq65pQ"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1XAQH3ZEee7H_Ximq65pQ" name="GameBoard" specification="_X0Em0H3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_X1XAQX3ZEee7H_Ximq65pQ" name="name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_X1XAQn3ZEee7H_Ximq65pQ" name="controller" type="_XvawUH3ZEee7H_Ximq65pQ"/>
+          <ownedParameter xmi:id="_X1XAQ33ZEee7H_Ximq65pQ" type="_XwPPsH3ZEee7H_Ximq65pQ" direction="return"/>
+          <language>java</language>
+          <body>super();&#xD;
+     this.setSize(700, 600);&#xD;
+     this.setResizable(false);&#xD;
+     this.setLayout(null);&#xD;
+     &#xD;
+     this.name = &quot;&quot;;&#xD;
+		setPlayerName(name);&#xD;
+		setController(controller);&#xD;
+     // create layout&#xD;
+     setupLayout();			&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1XARH3ZEee7H_Ximq65pQ" name="setupLayout" specification="_XwQd0H3ZEee7H_Ximq65pQ">
+          <language>java</language>
+          <body>titleLabel = new JLabel(&quot;Yahtzee&quot;);&#xD;
+		titleLabel.setSize(new Dimension(50,25));&#xD;
+		titleLabel.setLocation(325, 0);&#xD;
+		this.add(titleLabel);&#xD;
+		 &#xD;
+		nameLabel = new JLabel(this.name);&#xD;
+		nameLabel.setSize(new Dimension(50, 25));&#xD;
+		nameLabel.setLocation(25, 0);&#xD;
+		this.add(nameLabel);&#xD;
+		&#xD;
+		diceBoard = new DicePanel(getController(), name);&#xD;
+		diceBoard.setBackground(Color.GRAY);&#xD;
+		diceBoard.setLocation(0, 30);&#xD;
+		diceBoard.setSize(new Dimension(700, 500));&#xD;
+		this.add(diceBoard);&#xD;
+	 </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1XARX3ZEee7H_Ximq65pQ" name="setPlayerName" specification="_XwQd0X3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_X1XARn3ZEee7H_Ximq65pQ" name="name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>if (!name.trim().isEmpty()) {&#xD;
+			this.name = name;&#xD;
+		} else {&#xD;
+			throw new IllegalArgumentException(&quot;invalid name&quot;);&#xD;
+		}&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1XAR33ZEee7H_Ximq65pQ" name="setCurrentPlayerName" specification="_XwQd033ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_X1XASH3ZEee7H_Ximq65pQ" name="name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>if(name.isEmpty() || name.equals(null)) {&#xD;
+			throw new IllegalArgumentException(&quot;invalid name&quot;);&#xD;
+		} else {&#xD;
+			this.playing = name + &quot; is playing&quot;;&#xD;
+		}&#xD;
+		&#xD;
+		JLabel currentPlayer = new JLabel(this.playing);&#xD;
+		currentPlayer.setSize(new Dimension(150, 25));&#xD;
+		currentPlayer.setLocation(325, 525);&#xD;
+		this.add(currentPlayer);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1XnUH3ZEee7H_Ximq65pQ" name="setController" specification="_X0FN4H3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_X1XnUX3ZEee7H_Ximq65pQ" name="controller" type="_Xu5y8H3ZEee7H_Ximq65pQ"/>
+          <language>java</language>
+          <body>this.controller = (PlayerController) controller;&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1XnUn3ZEee7H_Ximq65pQ" name="start" specification="_XwRE4X3ZEee7H_Ximq65pQ">
+          <language>java</language>
+          <body>setVisible(true);&#xD;
+     setCurrentPlayerName(name);&#xD;
+     diceBoard.start();&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_XwQd0H3ZEee7H_Ximq65pQ" name="setupLayout" visibility="private" method="_X1XARH3ZEee7H_Ximq65pQ"/>
+        <ownedOperation xmi:id="_XwQd0X3ZEee7H_Ximq65pQ" name="setPlayerName" visibility="private" method="_X1XARX3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_XwQd0n3ZEee7H_Ximq65pQ" name="name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_XwQd033ZEee7H_Ximq65pQ" name="setCurrentPlayerName" method="_X1XAR33ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_XwRE4H3ZEee7H_Ximq65pQ" name="name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_XwRE4X3ZEee7H_Ximq65pQ" name="start" method="_X1XnUn3ZEee7H_Ximq65pQ"/>
+        <ownedOperation xmi:id="_X0Em0H3ZEee7H_Ximq65pQ" name="GameBoard" method="_X1XAQH3ZEee7H_Ximq65pQ">
+          <eAnnotations xmi:id="_X0Em033ZEee7H_Ximq65pQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_X0Em1H3ZEee7H_Ximq65pQ" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_X0Em0X3ZEee7H_Ximq65pQ" name="name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_X0Em0n3ZEee7H_Ximq65pQ" name="controller" type="_XvawUH3ZEee7H_Ximq65pQ"/>
+          <ownedParameter xmi:id="_X0Em1X3ZEee7H_Ximq65pQ" type="_XwPPsH3ZEee7H_Ximq65pQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_X0FN4H3ZEee7H_Ximq65pQ" name="setController" method="_X1XnUH3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_X0FN4X3ZEee7H_Ximq65pQ" name="controller" type="_Xu5y8H3ZEee7H_Ximq65pQ"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_X0kWEH3ZEee7H_Ximq65pQ" name="addIsListener">
+          <ownedParameter xmi:id="_X0kWEX3ZEee7H_Ximq65pQ" name="isListener" type="_X0DYsH3ZEee7H_Ximq65pQ"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_XwUvQH3ZEee7H_Ximq65pQ" name="UI">
+        <generalization xmi:id="_X0oAcn3ZEee7H_Ximq65pQ" general="_X0HDEH3ZEee7H_Ximq65pQ"/>
+        <ownedAttribute xmi:id="_X09XoH3ZEee7H_Ximq65pQ" name="serialVersionUID" visibility="private" isLeaf="true" isStatic="true" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_X09XoX3ZEee7H_Ximq65pQ" value="1L"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_X09-sH3ZEee7H_Ximq65pQ" name="name" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_X09-sX3ZEee7H_Ximq65pQ" name="playerNames" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <qualifier xmi:id="_X0-lwH3ZEee7H_Ximq65pQ">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </qualifier>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_X0-lwX3ZEee7H_Ximq65pQ" name="controller" visibility="private" type="_XvTbkH3ZEee7H_Ximq65pQ" isReadOnly="true" association="_X1uMoX3ZEee7H_Ximq65pQ"/>
+        <ownedAttribute xmi:id="_X0-lwn3ZEee7H_Ximq65pQ" name="playerPanels" type="_XwPPsH3ZEee7H_Ximq65pQ" isReadOnly="true" association="_X1uMpH3ZEee7H_Ximq65pQ">
+          <qualifier xmi:id="_X0-lw33ZEee7H_Ximq65pQ">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </qualifier>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_X0_M0H3ZEee7H_Ximq65pQ" name="players" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <interfaceRealization xmi:id="_X0IRMn3ZEee7H_Ximq65pQ" client="_XwUvQH3ZEee7H_Ximq65pQ" supplier="_XwcrEH3ZEee7H_Ximq65pQ" contract="_XwcrEH3ZEee7H_Ximq65pQ"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1YOYH3ZEee7H_Ximq65pQ" name="UI" specification="_XwV9YH3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_X1YOYX3ZEee7H_Ximq65pQ" type="_XwUvQH3ZEee7H_Ximq65pQ" direction="return"/>
+          <language>java</language>
+          <body>super();&#xD;
+     this.setResizable(false);&#xD;
+     this.setLayout(null);        &#xD;
+     String players = &quot;&quot;;&#xD;
+     int amount = 0;&#xD;
+     &#xD;
+ 	while(amount &lt; 2){&#xD;
+ 		amount = setPlayerAmount(players);&#xD;
+ 	}&#xD;
+ 	this.players = amount;&#xD;
+&#xD;
+     playerNames = new HashMap&lt;String,String>();&#xD;
+     playerPanels = new HashMap&lt;>();&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1YOYn3ZEee7H_Ximq65pQ" name="setPlayerAmount" specification="_XwWkcH3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_X1YOY33ZEee7H_Ximq65pQ" name="players">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_X1YOZH3ZEee7H_Ximq65pQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>players = JOptionPane.showInputDialog(&quot;Please enter the amount of players&quot;);&#xD;
+     while(players.isEmpty() || players == null)&#xD;
+     {&#xD;
+         players = JOptionPane.showInputDialog(&quot;Please enter the amount of players&quot;);&#xD;
+     }&#xD;
+     &#xD;
+     try&#xD;
+     {&#xD;
+     	return Integer.parseInt(players);&#xD;
+     }catch (NumberFormatException e) {&#xD;
+     	return 0;&#xD;
+     }&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1YOZX3ZEee7H_Ximq65pQ" name="setupLayout" specification="_XwWkc33ZEee7H_Ximq65pQ">
+          <language>java</language>
+          <body>int size = playerNames.size() + 1;&#xD;
+ 	String id = &quot;player&quot; + size;&#xD;
+ 	name = JOptionPane.showInputDialog(id + &quot;, enter your name: &quot;);&#xD;
+ 	while(name.isEmpty() || name == null || playerNames.containsValue(name) || name.length() &lt; 2)&#xD;
+ 	{&#xD;
+     	name = JOptionPane.showInputDialog(id +&quot;, enter your name: &quot;);&#xD;
+ 	}&#xD;
+ 	playerNames.put(id, name);&#xD;
+ 	//controller.newGame(getPlayerIDAndNames());&#xD;
+ 	//controller.newPlayer(this, id);&#xD;
+     //playerPanels.put(id, new GameBoard(name, controller.getPlayerController(id)));&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1YOZn3ZEee7H_Ximq65pQ" name="update" specification="_XwXLgH3ZEee7H_Ximq65pQ">
+          <language>java</language>
+          <body>Map&lt;String, PlayerController> playerControllers = this.getController().getPlayerControllers();&#xD;
+ 	&#xD;
+ 	for(int i = 1; i &lt; playerControllers.size(); i++)&#xD;
+ 	{&#xD;
+ 		if(controller.getCurrentPlayer().getPlayer().getRolls() == 0)&#xD;
+     	{&#xD;
+     		&#xD;
+     		int playerNum = Integer.parseInt(controller.getCurrentPlayer().getPlayer().getID().substring(6));&#xD;
+     		System.out.println(playerNum);&#xD;
+     		if(playerNum == playerControllers.size())&#xD;
+     		{&#xD;
+     			playerNum = 1;&#xD;
+     		}&#xD;
+     		playerPanels.get(&quot;player&quot; + (playerNum +1)).toFront();&#xD;
+     		playerPanels.get(&quot;player&quot; + i).getDiceBoard().setEnabled(false);&#xD;
+     		playerControllers.get(&quot;player&quot; + (playerNum + 1)).startTurn(controller.getCurrentState());&#xD;
+     	}&#xD;
+ 		&#xD;
+ 		//playerPanels.get(&quot;player&quot;+i).getDiceBoard().setDice(playerControllers.get(&quot;player&quot; + i).getDice());&#xD;
+ 		//playerPanels.get(&quot;player&quot;+i).getDiceBoard().setLockedDice(playerControllers.get(&quot;player&quot; + i).getLockedDice());&#xD;
+ 		playerPanels.get(&quot;player&quot;+i).getDiceBoard().setDice(playerControllers.get(controller.getCurrentPlayer().getPlayer().getID()).getDice());&#xD;
+ 		playerPanels.get(&quot;player&quot;+i).getDiceBoard().setLockedDice(playerControllers.get(controller.getCurrentPlayer().getPlayer().getID()).getLockedDice());   			&#xD;
+			playerPanels.get(&quot;player&quot;+i).setCurrentPlayerName(this.controller.getCurrentPlayer().getPlayerName());&#xD;
+ 	}&#xD;
+ 	&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1YOZ33ZEee7H_Ximq65pQ" name="getPlayerIDAndNames" specification="_XwXLgX3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_X1YOaH3ZEee7H_Ximq65pQ" type="_XzYqUH3ZEee7H_Ximq65pQ" direction="return"/>
+          <language>java</language>
+          <body>return this.playerNames;&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1Y1cH3ZEee7H_Ximq65pQ" name="setController" specification="_X0I4QH3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_X1Y1cX3ZEee7H_Ximq65pQ" name="controller" type="_Xu5y8H3ZEee7H_Ximq65pQ"/>
+          <language>java</language>
+          <body>this.controller = (GameController) controller;    &#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1Y1cn3ZEee7H_Ximq65pQ" name="start" specification="_XwZAsH3ZEee7H_Ximq65pQ">
+          <language>java</language>
+          <body>for(int i = 0; i &lt; this.players; i++){&#xD;
+     	&#xD;
+     	setupLayout();&#xD;
+     }&#xD;
+     controller.newGame(playerNames);&#xD;
+ 	for(int i = playerPanels.size(); i > 0; i--)&#xD;
+ 	{&#xD;
+ 		playerPanels.get(&quot;player&quot; + i).setVisible(true);&#xD;
+ 	}&#xD;
+ 	//playerPanels.get(&quot;&quot;)&#xD;
+     //playerPanels.get(&quot;player1&quot;).start();&#xD;
+     //controller.startGame();&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_XwV9YH3ZEee7H_Ximq65pQ" name="UI" method="_X1YOYH3ZEee7H_Ximq65pQ">
+          <eAnnotations xmi:id="_XwV9YX3ZEee7H_Ximq65pQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_XwV9Yn3ZEee7H_Ximq65pQ" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_XwV9Y33ZEee7H_Ximq65pQ" type="_XwUvQH3ZEee7H_Ximq65pQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_XwWkcH3ZEee7H_Ximq65pQ" name="setPlayerAmount" visibility="private" method="_X1YOYn3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_XwWkcX3ZEee7H_Ximq65pQ" name="players">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_XwWkcn3ZEee7H_Ximq65pQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_XwWkc33ZEee7H_Ximq65pQ" name="setupLayout" visibility="private" method="_X1YOZX3ZEee7H_Ximq65pQ"/>
+        <ownedOperation xmi:id="_XwXLgH3ZEee7H_Ximq65pQ" name="update" method="_X1YOZn3ZEee7H_Ximq65pQ"/>
+        <ownedOperation xmi:id="_XwXLgX3ZEee7H_Ximq65pQ" name="getPlayerIDAndNames" method="_X1YOZ33ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_X0myUH3ZEee7H_Ximq65pQ" type="_XzYqUH3ZEee7H_Ximq65pQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_XwZAsH3ZEee7H_Ximq65pQ" name="start" method="_X1Y1cn3ZEee7H_Ximq65pQ"/>
+        <ownedOperation xmi:id="_X0I4QH3ZEee7H_Ximq65pQ" name="setController" method="_X1Y1cH3ZEee7H_Ximq65pQ">
+          <ownedParameter xmi:id="_X0I4QX3ZEee7H_Ximq65pQ" name="controller" type="_Xu5y8H3ZEee7H_Ximq65pQ"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_X0myUX3ZEee7H_Ximq65pQ" name="addIsListener">
+          <ownedParameter xmi:id="_X0myUn3ZEee7H_Ximq65pQ" name="isListener" type="_X0DYsH3ZEee7H_Ximq65pQ"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_XwcrEH3ZEee7H_Ximq65pQ" name="View">
+        <ownedOperation xmi:id="_XwdSIH3ZEee7H_Ximq65pQ" name="start" visibility="package"/>
+        <ownedOperation xmi:id="_X0LUgX3ZEee7H_Ximq65pQ" name="setController">
+          <ownedParameter xmi:id="_X0LUgn3ZEee7H_Ximq65pQ" name="controller" type="_Xu5y8H3ZEee7H_Ximq65pQ"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_X0p1oH3ZEee7H_Ximq65pQ" name="addIsListener" visibility="package">
+          <ownedParameter xmi:id="_X0p1oX3ZEee7H_Ximq65pQ" name="isListener" type="_X0DYsH3ZEee7H_Ximq65pQ"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_X1qiQX3ZEee7H_Ximq65pQ" name="" memberEnd="_X1qiQn3ZEee7H_Ximq65pQ _X034En3ZEee7H_Ximq65pQ">
+        <ownedEnd xmi:id="_X1qiQn3ZEee7H_Ximq65pQ" name="" type="_XwJJEH3ZEee7H_Ximq65pQ" association="_X1qiQX3ZEee7H_Ximq65pQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_X1rJUX3ZEee7H_Ximq65pQ" name="" memberEnd="_X1rJUn3ZEee7H_Ximq65pQ _X04fIX3ZEee7H_Ximq65pQ">
+        <ownedEnd xmi:id="_X1rJUn3ZEee7H_Ximq65pQ" name="" type="_XwJJEH3ZEee7H_Ximq65pQ" association="_X1rJUX3ZEee7H_Ximq65pQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_X1rwYX3ZEee7H_Ximq65pQ" name="" memberEnd="_X1rwYn3ZEee7H_Ximq65pQ _X04fI33ZEee7H_Ximq65pQ">
+        <ownedEnd xmi:id="_X1rwYn3ZEee7H_Ximq65pQ" name="" type="_XwJJEH3ZEee7H_Ximq65pQ" association="_X1rwYX3ZEee7H_Ximq65pQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_X1rwZH3ZEee7H_Ximq65pQ" name="" memberEnd="_X1rwZX3ZEee7H_Ximq65pQ _X05GMX3ZEee7H_Ximq65pQ">
+        <ownedEnd xmi:id="_X1rwZX3ZEee7H_Ximq65pQ" name="" type="_XwJJEH3ZEee7H_Ximq65pQ" association="_X1rwZH3ZEee7H_Ximq65pQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_X1sXcX3ZEee7H_Ximq65pQ" name="" memberEnd="_X1sXcn3ZEee7H_Ximq65pQ _X06UUX3ZEee7H_Ximq65pQ">
+        <ownedEnd xmi:id="_X1sXcn3ZEee7H_Ximq65pQ" name="" type="_XwJJEH3ZEee7H_Ximq65pQ" association="_X1sXcX3ZEee7H_Ximq65pQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_X1sXdH3ZEee7H_Ximq65pQ" name="" memberEnd="_X1sXdX3ZEee7H_Ximq65pQ _X07icn3ZEee7H_Ximq65pQ">
+        <ownedEnd xmi:id="_X1sXdX3ZEee7H_Ximq65pQ" name="" type="_XwPPsH3ZEee7H_Ximq65pQ" association="_X1sXdH3ZEee7H_Ximq65pQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_X1s-gX3ZEee7H_Ximq65pQ" name="" memberEnd="_X1s-gn3ZEee7H_Ximq65pQ _X08Jg33ZEee7H_Ximq65pQ">
+        <ownedEnd xmi:id="_X1s-gn3ZEee7H_Ximq65pQ" name="" type="_XwPPsH3ZEee7H_Ximq65pQ" association="_X1s-gX3ZEee7H_Ximq65pQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_X1tlkH3ZEee7H_Ximq65pQ" name="" memberEnd="_X1tlkX3ZEee7H_Ximq65pQ _X08wkX3ZEee7H_Ximq65pQ">
+        <ownedEnd xmi:id="_X1tlkX3ZEee7H_Ximq65pQ" name="" type="_XwPPsH3ZEee7H_Ximq65pQ" association="_X1tlkH3ZEee7H_Ximq65pQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_X1tlk33ZEee7H_Ximq65pQ" name="" memberEnd="_X1tllH3ZEee7H_Ximq65pQ _X08wk33ZEee7H_Ximq65pQ">
+        <ownedEnd xmi:id="_X1tllH3ZEee7H_Ximq65pQ" name="" type="_XwPPsH3ZEee7H_Ximq65pQ" association="_X1tlk33ZEee7H_Ximq65pQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_X1uMoX3ZEee7H_Ximq65pQ" name="" memberEnd="_X1uMon3ZEee7H_Ximq65pQ _X0-lwX3ZEee7H_Ximq65pQ">
+        <ownedEnd xmi:id="_X1uMon3ZEee7H_Ximq65pQ" name="" type="_XwUvQH3ZEee7H_Ximq65pQ" association="_X1uMoX3ZEee7H_Ximq65pQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_X1uMpH3ZEee7H_Ximq65pQ" name="" memberEnd="_X1uMpX3ZEee7H_Ximq65pQ _X0-lwn3ZEee7H_Ximq65pQ">
+        <ownedEnd xmi:id="_X1uMpX3ZEee7H_Ximq65pQ" name="" type="_XwUvQH3ZEee7H_Ximq65pQ" association="_X1uMpH3ZEee7H_Ximq65pQ"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_XuMoUH3ZEee7H_Ximq65pQ" name="javax">
+      <packagedElement xmi:type="uml:Package" xmi:id="_XuMoUX3ZEee7H_Ximq65pQ" name="swing">
+        <packagedElement xmi:type="uml:Class" xmi:id="_Xz9SEH3ZEee7H_Ximq65pQ" name="AbstractButton"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_Xz95IX3ZEee7H_Ximq65pQ" name="JButton"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_Xz-gMX3ZEee7H_Ximq65pQ" name="JPanel"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_X0HDEH3ZEee7H_Ximq65pQ" name="JFrame"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_X0HqIX3ZEee7H_Ximq65pQ" name="JOptionPane"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_X0jvAH3ZEee7H_Ximq65pQ" name="JLabel"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_XvoLsH3ZEee7H_Ximq65pQ" name="launcher">
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X1N2UH3ZEee7H_Ximq65pQ" name="main" specification="_XvoywH3ZEee7H_Ximq65pQ">
+        <ownedParameter xmi:id="_X1N2UX3ZEee7H_Ximq65pQ" name="args">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_X1N2Un3ZEee7H_Ximq65pQ" value="*"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>UI view = new UI();&#xD;
+		GameController controller;&#xD;
+		try {&#xD;
+			controller = new GameController(view);&#xD;
+			controller.startView();&#xD;
+		} catch (ControllerException e) {&#xD;
+			e.printStackTrace();&#xD;
+		}&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_XvoywH3ZEee7H_Ximq65pQ" name="main" isStatic="true" method="_X1N2UH3ZEee7H_Ximq65pQ">
+        <ownedParameter xmi:id="_XvoywX3ZEee7H_Ximq65pQ" name="args">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XvpZ0X3ZEee7H_Ximq65pQ" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <profileApplication xmi:id="_XdXXAH3ZEee7H_Ximq65pQ">
+      <eAnnotations xmi:id="_XdXXAX3ZEee7H_Ximq65pQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_XdX-EH3ZEee7H_Ximq65pQ" base_Package="_XXpJgH3ZEee7H_Ximq65pQ">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_XvHOUH3ZEee7H_Ximq65pQ" base_Element="_XvGnQH3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Annotations xmi:id="_XvIccH3ZEee7H_Ximq65pQ" base_Element="_XvGnQH3ZEee7H_Ximq65pQ">
+    <annotations xmi:id="_XvIccX3ZEee7H_Ximq65pQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_XvUpsX3ZEee7H_Ximq65pQ" base_Element="_XvUpsH3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Annotations xmi:id="_XvVQwH3ZEee7H_Ximq65pQ" base_Element="_XvUpsH3ZEee7H_Ximq65pQ">
+    <annotations xmi:id="_XvVQwX3ZEee7H_Ximq65pQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Generics xmi:id="_XvfBwH3ZEee7H_Ximq65pQ" genericsValue="Integer, Integer" base_Element="_XvdzoX3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Generics xmi:id="_Xvg28H3ZEee7H_Ximq65pQ" genericsValue="Integer, Integer" base_Element="_Xvfo0n3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_XvheAX3ZEee7H_Ximq65pQ" base_Element="_XvheAH3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Annotations xmi:id="_XviFEH3ZEee7H_Ximq65pQ" base_Element="_XvheAH3ZEee7H_Ximq65pQ">
+    <annotations xmi:id="_XviFEX3ZEee7H_Ximq65pQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_XvpZ0H3ZEee7H_Ximq65pQ" base_Element="_XvoywH3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Array xmi:id="_XvqA4H3ZEee7H_Ximq65pQ" base_Element="_XvoywX3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_XvuSUn3ZEee7H_Ximq65pQ" base_Element="_XvtrQH3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_XvvgcH3ZEee7H_Ximq65pQ" base_Element="_Xvu5YH3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Annotations xmi:id="_XvwHgH3ZEee7H_Ximq65pQ" base_Element="_Xvu5YH3ZEee7H_Ximq65pQ">
+    <annotations xmi:id="_XvwHgX3ZEee7H_Ximq65pQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Xv3cQH3ZEee7H_Ximq65pQ" base_Element="_Xv21MH3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Annotations xmi:id="_Xv3cQX3ZEee7H_Ximq65pQ" base_Element="_Xv21MH3ZEee7H_Ximq65pQ">
+    <annotations xmi:id="_Xv3cQn3ZEee7H_Ximq65pQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Generics xmi:id="_Xv_YEH3ZEee7H_Ximq65pQ" genericsValue="Integer, Integer" base_Element="_Xv-xAH3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Generics xmi:id="_XwFesH3ZEee7H_Ximq65pQ" genericsValue="Integer, Integer" base_Element="_XwE3oH3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Generics xmi:id="_XwMMYH3ZEee7H_Ximq65pQ" genericsValue="Integer, Integer" base_Element="_XwK-QX3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_XwRE4n3ZEee7H_Ximq65pQ" base_Element="_XwRE4X3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Annotations xmi:id="_XwRr8H3ZEee7H_Ximq65pQ" base_Element="_XwRE4X3ZEee7H_Ximq65pQ">
+    <annotations xmi:id="_XwRr8X3ZEee7H_Ximq65pQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Generics xmi:id="_XwYZoH3ZEee7H_Ximq65pQ" genericsValue="String, String" base_Element="_XwXLgX3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_XwZAsX3ZEee7H_Ximq65pQ" base_Element="_XwZAsH3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Annotations xmi:id="_XwZnwH3ZEee7H_Ximq65pQ" base_Element="_XwZAsH3ZEee7H_Ximq65pQ">
+    <annotations xmi:id="_XwZnwX3ZEee7H_Ximq65pQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="_XzZ4cH3ZEee7H_Ximq65pQ" base_Element="_XzYqUH3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_XzgmI33ZEee7H_Ximq65pQ" base_Element="_XzgmIX3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Annotations xmi:id="_XzhNMH3ZEee7H_Ximq65pQ" base_Element="_XzgmIX3ZEee7H_Ximq65pQ">
+    <annotations xmi:id="_XzhNMX3ZEee7H_Ximq65pQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="_XzjCYH3ZEee7H_Ximq65pQ" base_Element="_XzibUH3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Reference xmi:id="_XzmFsH3ZEee7H_Ximq65pQ" base_Element="_XzleoH3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Reference xmi:id="_XzmFsn3ZEee7H_Ximq65pQ" base_Element="_XzmFsX3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_XzqXIn3ZEee7H_Ximq65pQ" base_Element="_XzqXIH3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Annotations xmi:id="_Xzq-MH3ZEee7H_Ximq65pQ" base_Element="_XzqXIH3ZEee7H_Ximq65pQ">
+    <annotations xmi:id="_Xzq-MX3ZEee7H_Ximq65pQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_XzrlQH3ZEee7H_Ximq65pQ" base_Element="_Xzq-Mn3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Annotations xmi:id="_XzsMUH3ZEee7H_Ximq65pQ" base_Element="_Xzq-Mn3ZEee7H_Ximq65pQ">
+    <annotations xmi:id="_XzsMUX3ZEee7H_Ximq65pQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_XzszYH3ZEee7H_Ximq65pQ" base_Element="_XzsMUn3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Annotations xmi:id="_XzszYX3ZEee7H_Ximq65pQ" base_Element="_XzsMUn3ZEee7H_Ximq65pQ">
+    <annotations xmi:id="_XzszYn3ZEee7H_Ximq65pQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Xzwdwn3ZEee7H_Ximq65pQ" base_Element="_XzwdwH3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Annotations xmi:id="_XzxE0H3ZEee7H_Ximq65pQ" base_Element="_XzwdwH3ZEee7H_Ximq65pQ">
+    <annotations xmi:id="_XzxE0X3ZEee7H_Ximq65pQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_XzxE1X3ZEee7H_Ximq65pQ" base_Element="_XzxE0n3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Annotations xmi:id="_Xzxr4H3ZEee7H_Ximq65pQ" base_Element="_XzxE0n3ZEee7H_Ximq65pQ">
+    <annotations xmi:id="_Xzxr4X3ZEee7H_Ximq65pQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Xzxr5H3ZEee7H_Ximq65pQ" base_Element="_Xzxr4n3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Annotations xmi:id="_XzyS8H3ZEee7H_Ximq65pQ" base_Element="_Xzxr4n3ZEee7H_Ximq65pQ">
+    <annotations xmi:id="_XzyS8X3ZEee7H_Ximq65pQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Xz0IIn3ZEee7H_Ximq65pQ" base_Element="_Xz0IIH3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Annotations xmi:id="_Xz0vMH3ZEee7H_Ximq65pQ" base_Element="_Xz0IIH3ZEee7H_Ximq65pQ">
+    <annotations xmi:id="_Xz0vMX3ZEee7H_Ximq65pQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Xz1WQH3ZEee7H_Ximq65pQ" base_Element="_Xz0vMn3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Annotations xmi:id="_Xz1WQX3ZEee7H_Ximq65pQ" base_Element="_Xz0vMn3ZEee7H_Ximq65pQ">
+    <annotations xmi:id="_Xz1WQn3ZEee7H_Ximq65pQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Xz19UH3ZEee7H_Ximq65pQ" base_Element="_Xz1WQ33ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Annotations xmi:id="_Xz19UX3ZEee7H_Ximq65pQ" base_Element="_Xz1WQ33ZEee7H_Ximq65pQ">
+    <annotations xmi:id="_Xz19Un3ZEee7H_Ximq65pQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="_Xz3LcH3ZEee7H_Ximq65pQ" base_Element="_Xz2kYH3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Reference xmi:id="_Xz610H3ZEee7H_Ximq65pQ" base_Element="_Xz6OwH3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Reference xmi:id="_Xz7c4H3ZEee7H_Ximq65pQ" base_Element="_Xz610X3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Reference xmi:id="_Xz8D8X3ZEee7H_Ximq65pQ" base_Element="_Xz8D8H3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Reference xmi:id="_Xz8rAH3ZEee7H_Ximq65pQ" base_Element="_Xz8D8n3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Reference xmi:id="_Xz95IH3ZEee7H_Ximq65pQ" base_Element="_Xz9SEH3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Reference xmi:id="_Xz-gMH3ZEee7H_Ximq65pQ" base_Element="_Xz95IX3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Reference xmi:id="_Xz_HQH3ZEee7H_Ximq65pQ" base_Element="_Xz-gMX3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Reference xmi:id="_X0D_wH3ZEee7H_Ximq65pQ" base_Element="_X0DYsH3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_X0FN4n3ZEee7H_Ximq65pQ" base_Element="_X0FN4H3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Annotations xmi:id="_X0F08H3ZEee7H_Ximq65pQ" base_Element="_X0FN4H3ZEee7H_Ximq65pQ">
+    <annotations xmi:id="_X0F08X3ZEee7H_Ximq65pQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="_X0HqIH3ZEee7H_Ximq65pQ" base_Element="_X0HDEH3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Reference xmi:id="_X0IRMH3ZEee7H_Ximq65pQ" base_Element="_X0HqIX3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_X0JfUH3ZEee7H_Ximq65pQ" base_Element="_X0I4QH3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Annotations xmi:id="_X0JfUX3ZEee7H_Ximq65pQ" base_Element="_X0I4QH3ZEee7H_Ximq65pQ">
+    <annotations xmi:id="_X0JfUn3ZEee7H_Ximq65pQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Generics xmi:id="_X0Pl8H3ZEee7H_Ximq65pQ" genericsValue="String, String" base_Element="_X0O-4X3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_X0Q0EH3ZEee7H_Ximq65pQ" base_Element="_X0QNAH3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Generics xmi:id="_X0RbIH3ZEee7H_Ximq65pQ" genericsValue="String, String" base_Element="_X0QNAX3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Annotations xmi:id="_X0RbIX3ZEee7H_Ximq65pQ" base_Element="_X0QNAH3ZEee7H_Ximq65pQ">
+    <annotations xmi:id="_X0RbIn3ZEee7H_Ximq65pQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="_X0SpQH3ZEee7H_Ximq65pQ" base_Element="_X0SCMX3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_X0TQUn3ZEee7H_Ximq65pQ" base_Element="_X0TQUH3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Generics xmi:id="_X0T3YH3ZEee7H_Ximq65pQ" genericsValue="String, String" base_Element="_X0TQUX3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Annotations xmi:id="_X0T3YX3ZEee7H_Ximq65pQ" base_Element="_X0TQUH3ZEee7H_Ximq65pQ">
+    <annotations xmi:id="_X0T3Yn3ZEee7H_Ximq65pQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_X0Vsk33ZEee7H_Ximq65pQ" base_Element="_X0VskH3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Generics xmi:id="_X0WToH3ZEee7H_Ximq65pQ" genericsValue="String, String" base_Element="_X0VskX3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Annotations xmi:id="_X0WToX3ZEee7H_Ximq65pQ" base_Element="_X0VskH3ZEee7H_Ximq65pQ">
+    <annotations xmi:id="_X0WTon3ZEee7H_Ximq65pQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Generics xmi:id="_X0XhwH3ZEee7H_Ximq65pQ" genericsValue="String, String" base_Element="_X0W6sX3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_X0Yv4H3ZEee7H_Ximq65pQ" base_Element="_X0YI0H3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Generics xmi:id="_X0ZW8H3ZEee7H_Ximq65pQ" genericsValue="String, String" base_Element="_X0YI0X3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Annotations xmi:id="_X0ZW8X3ZEee7H_Ximq65pQ" base_Element="_X0YI0H3ZEee7H_Ximq65pQ">
+    <annotations xmi:id="_X0ZW8n3ZEee7H_Ximq65pQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_X0bMIH3ZEee7H_Ximq65pQ" base_Element="_X0alEH3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Generics xmi:id="_X0bMIX3ZEee7H_Ximq65pQ" genericsValue="String, String" base_Element="_X0alEX3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Annotations xmi:id="_X0bzMH3ZEee7H_Ximq65pQ" base_Element="_X0alEH3ZEee7H_Ximq65pQ">
+    <annotations xmi:id="_X0bzMX3ZEee7H_Ximq65pQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Generics xmi:id="_X0doYH3ZEee7H_Ximq65pQ" genericsValue="String, String" base_Element="_X0dBUX3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Generics xmi:id="_X0hSwn3ZEee7H_Ximq65pQ" genericsValue="Integer, Integer" base_Element="_X0hSwX3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Reference xmi:id="_X0jvAX3ZEee7H_Ximq65pQ" base_Element="_X0jvAH3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_X0kWEn3ZEee7H_Ximq65pQ" base_Element="_X0kWEH3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Annotations xmi:id="_X0k9IH3ZEee7H_Ximq65pQ" base_Element="_X0kWEH3ZEee7H_Ximq65pQ">
+    <annotations xmi:id="_X0k9IX3ZEee7H_Ximq65pQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_X0nZYH3ZEee7H_Ximq65pQ" base_Element="_X0myUX3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Annotations xmi:id="_X0oAcH3ZEee7H_Ximq65pQ" base_Element="_X0myUX3ZEee7H_Ximq65pQ">
+    <annotations xmi:id="_X0oAcX3ZEee7H_Ximq65pQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_X0tgAH3ZEee7H_Ximq65pQ" base_Element="_X0s48H3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_X0tgAn3ZEee7H_Ximq65pQ" base_Element="_X0tgAX3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_X0uHEH3ZEee7H_Ximq65pQ" base_Element="_X0tgA33ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_X0v8QH3ZEee7H_Ximq65pQ" base_Element="_X0vVMn3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_X0v8Qn3ZEee7H_Ximq65pQ" base_Element="_X0v8QX3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_X0xxcH3ZEee7H_Ximq65pQ" base_Element="_X0xKYn3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_X0yYgH3ZEee7H_Ximq65pQ" base_Element="_X0xxcX3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_X0yYgn3ZEee7H_Ximq65pQ" base_Element="_X0yYgX3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_X00NsX3ZEee7H_Ximq65pQ" base_Element="_X00NsH3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_X000wX3ZEee7H_Ximq65pQ" base_Element="_X000wH3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_X01b0X3ZEee7H_Ximq65pQ" base_Element="_X01b0H3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_X02C4X3ZEee7H_Ximq65pQ" base_Element="_X02C4H3ZEee7H_Ximq65pQ">
+    <associatedElement xmi:type="uml:Operation" xmi:id="_X02C4n3ZEee7H_Ximq65pQ" name="getDice" method="_X1TV4H3ZEee7H_Ximq65pQ">
+      <ownedParameter xmi:id="_X02p8X3ZEee7H_Ximq65pQ" type="_XzYqUH3ZEee7H_Ximq65pQ" direction="return"/>
+    </associatedElement>
+  </UMLLabProfile:LegacyStyledElement>
+  <UMLLabProfile:Generics xmi:id="_X02p8H3ZEee7H_Ximq65pQ" genericsValue="Integer, Integer" base_Element="_X02C4n3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_X034E33ZEee7H_Ximq65pQ" base_Element="_X034En3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_X04fIn3ZEee7H_Ximq65pQ" base_Element="_X04fIX3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_X05GMH3ZEee7H_Ximq65pQ" base_Element="_X04fI33ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_X05GMn3ZEee7H_Ximq65pQ" base_Element="_X05GMX3ZEee7H_Ximq65pQ">
+    <associatedElement xmi:type="uml:Operation" xmi:id="_X05GM33ZEee7H_Ximq65pQ" name="getLockedDice" method="_X1VLEH3ZEee7H_Ximq65pQ">
+      <ownedParameter xmi:id="_X05tQn3ZEee7H_Ximq65pQ" type="_XzYqUH3ZEee7H_Ximq65pQ" direction="return"/>
+    </associatedElement>
+    <associatedElement xmi:type="uml:Operation" xmi:id="_X05GNH3ZEee7H_Ximq65pQ" name="setLockedDice" method="_X1VLEn3ZEee7H_Ximq65pQ">
+      <ownedParameter xmi:id="_X05tQH3ZEee7H_Ximq65pQ" name="locked" type="_XzYqUH3ZEee7H_Ximq65pQ"/>
+    </associatedElement>
+  </UMLLabProfile:LegacyStyledElement>
+  <UMLLabProfile:Generics xmi:id="_X05tQX3ZEee7H_Ximq65pQ" genericsValue="Integer, Integer" base_Element="_X05GM33ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Generics xmi:id="_X06UUH3ZEee7H_Ximq65pQ" genericsValue="Integer, Integer" base_Element="_X05tQH3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_X067YX3ZEee7H_Ximq65pQ" base_Element="_X06UUX3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_X08JgH3ZEee7H_Ximq65pQ" base_Element="_X07ic33ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_X08Jgn3ZEee7H_Ximq65pQ" base_Element="_X08JgX3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_X08wkH3ZEee7H_Ximq65pQ" base_Element="_X08Jg33ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_X08wkn3ZEee7H_Ximq65pQ" base_Element="_X08wkX3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_X09-sn3ZEee7H_Ximq65pQ" base_Element="_X09-sX3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_X0_M0X3ZEee7H_Ximq65pQ" base_Element="_X0_M0H3ZEee7H_Ximq65pQ"/>
+  <uml:OpaqueBehavior xmi:id="_X1TV4H3ZEee7H_Ximq65pQ" name="getDice" specification="_X02C4n3ZEee7H_Ximq65pQ">
+    <ownedParameter xmi:id="_X1TV4X3ZEee7H_Ximq65pQ" type="_XzYqUH3ZEee7H_Ximq65pQ" direction="return"/>
+    <language>java</language>
+    <body>return this.dice.getDice();
+	</body>
+  </uml:OpaqueBehavior>
+  <uml:OpaqueBehavior xmi:id="_X1VLEH3ZEee7H_Ximq65pQ" name="getLockedDice" specification="_X05GM33ZEee7H_Ximq65pQ">
+    <ownedParameter xmi:id="_X1VLEX3ZEee7H_Ximq65pQ" type="_XzYqUH3ZEee7H_Ximq65pQ" direction="return"/>
+    <language>java</language>
+    <body>return controller.getPlayer().getLockedDice();&#xD;
+	</body>
+  </uml:OpaqueBehavior>
+  <uml:OpaqueBehavior xmi:id="_X1VLEn3ZEee7H_Ximq65pQ" name="setLockedDice" specification="_X05GNH3ZEee7H_Ximq65pQ">
+    <ownedParameter xmi:id="_X1VLE33ZEee7H_Ximq65pQ" name="locked" type="_XzYqUH3ZEee7H_Ximq65pQ"/>
+    <language>java</language>
+    <body>lockedDice.removeAll();&#xD;
+		for(int i = 0; i &lt; locked.size(); i++)&#xD;
+		{&#xD;
+			JButton lockedDie = new JButton(locked.get(i).toString());&#xD;
+			lockedDie.setLocation(0 + i * 50 + 50, 0);&#xD;
+			lockedDie.setSize(new Dimension(45, 50));&#xD;
+			if(lockedDie.getText().equals(&quot;&quot;+0))&#xD;
+			{&#xD;
+				lockedDie.setVisible(false);&#xD;
+			}&#xD;
+			lockedDice.add(lockedDie, i);&#xD;
+		}&#xD;
+		if(!locked.containsValue(0))&#xD;
+		{&#xD;
+			rollDice.setEnabled(false);&#xD;
+		}&#xD;
+		lockedDice.repaint();&#xD;
+		diceList.repaint();&#xD;
+	</body>
+  </uml:OpaqueBehavior>
+  <UMLLabProfile:Reference xmi:id="_X1kboH3ZEee7H_Ximq65pQ" base_Element="_X1j0kH3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Reference xmi:id="_X1lCsH3ZEee7H_Ximq65pQ" base_Element="_X1kboX3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Reference xmi:id="_X1lCs33ZEee7H_Ximq65pQ" base_Element="_X1lCsX3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Reference xmi:id="_X1lpwH3ZEee7H_Ximq65pQ" base_Element="_X1lCtH3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Reference xmi:id="_X1lpw33ZEee7H_Ximq65pQ" base_Element="_X1lpwX3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Reference xmi:id="_X1mQ0n3ZEee7H_Ximq65pQ" base_Element="_X1mQ0H3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Reference xmi:id="_X1m34H3ZEee7H_Ximq65pQ" base_Element="_X1mQ033ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Reference xmi:id="_X1m3433ZEee7H_Ximq65pQ" base_Element="_X1m34X3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Reference xmi:id="_X1ne8H3ZEee7H_Ximq65pQ" base_Element="_X1m35H3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Reference xmi:id="_X1oGAH3ZEee7H_Ximq65pQ" base_Element="_X1ne8X3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Reference xmi:id="_X1oGA33ZEee7H_Ximq65pQ" base_Element="_X1oGAX3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Reference xmi:id="_X1otEn3ZEee7H_Ximq65pQ" base_Element="_X1otEH3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Reference xmi:id="_X1pUIH3ZEee7H_Ximq65pQ" base_Element="_X1otE33ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Reference xmi:id="_X1p7MH3ZEee7H_Ximq65pQ" base_Element="_X1pUIX3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Reference xmi:id="_X1qiQH3ZEee7H_Ximq65pQ" base_Element="_X1p7MX3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Reference xmi:id="_X1rJUH3ZEee7H_Ximq65pQ" base_Element="_X1qiQX3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Reference xmi:id="_X1rwYH3ZEee7H_Ximq65pQ" base_Element="_X1rJUX3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Reference xmi:id="_X1rwY33ZEee7H_Ximq65pQ" base_Element="_X1rwYX3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Reference xmi:id="_X1sXcH3ZEee7H_Ximq65pQ" base_Element="_X1rwZH3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Reference xmi:id="_X1sXc33ZEee7H_Ximq65pQ" base_Element="_X1sXcX3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Reference xmi:id="_X1s-gH3ZEee7H_Ximq65pQ" base_Element="_X1sXdH3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Reference xmi:id="_X1s-g33ZEee7H_Ximq65pQ" base_Element="_X1s-gX3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Reference xmi:id="_X1tlkn3ZEee7H_Ximq65pQ" base_Element="_X1tlkH3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Reference xmi:id="_X1uMoH3ZEee7H_Ximq65pQ" base_Element="_X1tlk33ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Reference xmi:id="_X1uMo33ZEee7H_Ximq65pQ" base_Element="_X1uMoX3ZEee7H_Ximq65pQ"/>
+  <UMLLabProfile:Reference xmi:id="_X1uzsH3ZEee7H_Ximq65pQ" base_Element="_X1uMpH3ZEee7H_Ximq65pQ"/>
+</xmi:XMI>
